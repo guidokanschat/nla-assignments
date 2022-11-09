@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 3                             
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until November 11, 2022, 2pm.]
+
+  \begin{Problem}
+    Consider a Hermitian matrix $\mata\in\C^{n\times n}$ and a unitary
+    linear operator $\matq\in\C^m\to\C^n$, $m<n$. Prove, that an
+    eigenvalue $\lambda_k(\matb)$ of the matrix
+    $\matb=\matq^*\mata\matq\in\C^{m\times m}$ is either equal to 0,
+    or the following estimate holds
+    \begin{gather*}
+      \abs{\lambda_{\min}(\mata)}
+      \leq \abs{\lambda_{k}(\matb)}
+      \leq \abs{\lambda_{\max}(\mata)},
+    \end{gather*}
+    where $\lambda_{\min}(\mata)$ and $\lambda_{\max}(\mata)$ denote
+    the smallest and largest eigenvalues of $\mata$ measured by their
+    magnitude.
+  \end{Problem}
+
+  \begin{Problem}
+    A diagonalizable real matrix $\mata$ has the following spectrum:
+    \begin{gather*}
+      \sigma(\mata) = \set{-2,\ 1-2i,\ 1+2i,\ 1,\ -i,\ i,\ 2}.
+    \end{gather*}
+    Consider using the inverse power method (\textit{vector
+      iteration}) to compute its eigenvalues.
+    \begin{enumerate}[(a)]
+    \item Find a set of all shift parameters for which the inverse
+      power method may \textit{not} converge. Draw a sketch.
+    \item For every \textit{real} eigenvalue find a \textit{real}
+      range of shifts that, if used in the inverse power method, will
+      reduce the error of approximation of the eigenvalue by a factor
+      of $10$ in each iteration.
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}
+    \label{problem:shift}
+    Propose shift parameters that will allow you to compute
+    \textit{all} eigenvalues and eigenvectors of the matrix
+    \begin{gather*}
+      \begin{pmatrix}
+        100 & 15 & 3 \\
+         15 & 20 & 5 \\
+          3 &  5 & 65
+      \end{pmatrix}
+      .
+    \end{gather*}
+    Prove that your choice is correct.  \textit{Hint:} Gershgorin
+    circle theorem
+  \end{Problem}
+
+  \begin{Problem}[Programming]
+    Write a program that computes all eigenvectors and eigenvalues of
+    the matrix
+    \begin{gather*}
+      \mata_{\epsilon} =
+      \begin{pmatrix}
+        100& 15& 3& 0& 0& \epsilon \\
+        15& 20& 5& 0& \epsilon & 0 \\
+        3& 5& 65& \epsilon&  0& 0 \\
+        0& 0& \epsilon& 110& 20& 5 \\
+        0& \epsilon& 0& 20& 80& 4 \\
+        \epsilon& 0& 0& 5& 4& 30
+      \end{pmatrix}
+    \end{gather*}
+    % with $\epsilon=1$
+    using the shifted (inverse) power method by observing the
+    following steps:
+    \begin{enumerate}[(a)]
+    \item Consider the matrix $\mata_0$ with $\epsilon=0$ and examine
+      the structure of the eigenvalue problem.
+    \item Compute all eigenvalues and eigenvectors of $\mata_0$.
+    \item Make an \textit{educated} guess of the eigenvalues of
+      $\mata_1$ and try computing those.
+    \item Would the strategy you proposed in
+      Problem~\ref{problem:shift} allow you to compute all 6
+      eigenvalues?
+    \end{enumerate}
+  \end{Problem}
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 
