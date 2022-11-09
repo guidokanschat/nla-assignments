@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 2                             
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until November 04, 2022, 2pm.]
+
+  \begin{Problem}
+    Show that a matrix is normal, if and only if it is unitarily
+    similar to a normal matrix. Namely, matrix $\mata$ is normal, if
+    and only if there exists a matrix $\matq$ and a normal matrix
+    $\matb$ such that
+    \begin{gather*}
+      \mata = \matq^{-1} \matb \matq.
+    \end{gather*}
+  \end{Problem}
+
+  \begin{Problem}
+    Show that for normal matrices the left and right eigenvectors for
+    a given eigenvalue coincide.
+  \end{Problem}
+
+  \begin{Problem}
+    Construct a counterexample that the problem of finding
+    eigenvectors is \textit{not} well-posed, if the eigenspaces are
+    almost parallel.
+  \end{Problem}
+
+  \begin{Problem}
+    Consider the following matrix
+    \begin{gather*}
+      \mata =
+      \begin{pmatrix}
+        \cos\phi & -\sin\phi\\
+        \sin\phi &  \cos\phi
+      \end{pmatrix}^T
+      \begin{pmatrix}
+        1 & \\
+          & c
+      \end{pmatrix}
+      \begin{pmatrix}
+        \cos\phi & -\sin\phi\\
+        \sin\phi &  \cos\phi
+      \end{pmatrix}
+    \end{gather*}
+    with parameters $\phi\in[0,2\pi]$ and $c\in(0,1)$.
+    \begin{enumerate}
+    \item Compute the eigenvalues and eigenvectors of $\mata$.
+    \item (Programming) Write a program which computes the sequence
+      $\bm x^{(n)}\in\R^2$ defined as
+      \begin{align*}
+        \bm x^{(n)} &= \mata \bm x^{(n-1)}, \\
+        \bm x^{(0)} &= \bm x^{*},
+      \end{align*}
+      for $\bm x^{*} = (1,\ 0)^T$, $c = 0.1$, and
+      $\phi=\frac\pi4$. Try playing with different values of those
+      parameters.
+    \item Is there a limit of $\bm x^{(n)}$? What is about the case
+      $c=1$?
+    \item Compute the limit: $\lim_{n\to\infty}\mata^n$.
+    \end{enumerate}
+  \end{Problem}
+\end{Sheet}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 
