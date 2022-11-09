@@ -1,0 +1,31 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{problemsheet_mathsim}[2022/10/22 Mathematical Methods of Simulation]
+
+\RequirePackage{mathsim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\bm}{\mathbf}
+\newcommand{\nfrac}[2]{#1/#2}
+\newcommand{\set}[1]{\left\{#1\right\}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Counters and their representation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{sheet}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theorem and related environments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{classproblem}{Problem}
+\renewenvironment{Problem}{\begin{classproblem}}{\end{classproblem}}
+\newenvironment{Sheet}[1][???]{
+  \pagenumbering{arabic}
+  \refstepcounter{sheet}
+  \setcounter{classproblem}{0}
+  \begin{center}
+    {\huge\textbf{Numerical Linear Algebra - Sheet~\thesheet}}
+
+    #1 \vskip6ex}{\end{center}}
+
