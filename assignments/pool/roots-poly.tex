@@ -1,0 +1,31 @@
+\begin{Problem}[Programming]
+  Write a program that computes all roots of a real polynomial by
+  processing the following steps:
+  \begin{enumerate}[(a)]
+  \item\label{roots-poly:parta}
+    Verify that the characteristic polynomial of the matrix
+    \begin{gather*}
+      \matc =
+      \begin{pmatrix}
+        0 & 0 & \cdots & 0 & -c_0 \\
+        1 & 0 & \cdots & 0 & -c_1 \\
+        0 & 1 & \cdots & 0 & -c_2\\
+        \vdots & \vdots & \ddots & \vdots & \vdots \\
+        0 & 0 & \cdots & 1 & -c_{n-1}
+      \end{pmatrix}
+      ,
+    \end{gather*}
+    known as \textit{companion matrix}, is
+    \begin{gather*}
+      p(t)=c_{0}+c_{1}t+\cdots +c_{{n-1}}t^{{n-1}}+t^{n}.
+    \end{gather*}
+  \item\label{roots-poly:partb} Implement the QR-iteration. Using
+    NumPy procedures is allowed, except the ones that directly
+    compute eigenvalues.
+  \item Use \eqref{roots-poly:parta} together with
+    \eqref{roots-poly:partb} to write a program that computes the
+    roots of a polynomial.
+  \item Test your implementation with the polynomial specified by
+    the coefficients $c_0=6$, $c_1=1$, $c_2=-7$, $c_3=-1$.
+  \end{enumerate}
+\end{Problem}
