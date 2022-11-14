@@ -11,6 +11,13 @@
 \newcommand{\set}[1]{\left\{#1\right\}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Conditionals
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newif\ifsolution
+% % \solutiontrue
+% \solutionfalse
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % Counters and their representation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcounter{sheet}
@@ -20,12 +27,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newtheorem{classproblem}{Problem}
 \renewenvironment{Problem}{\begin{classproblem}}{\end{classproblem}}
-\newenvironment{Sheet}[1][???]{
+\newenvironment{Sheet}[1][???]{%
   \pagenumbering{arabic}
   \refstepcounter{sheet}
   \setcounter{classproblem}{0}
   \begin{center}
     {\huge\textbf{Numerical Linear Algebra - Sheet~\thesheet}}
 
-    #1 \vskip6ex}{\end{center}}
+    #1 \vskip6ex\end{center}}{}
 
+\newenvironment{SolutionSheet}{%
+  \pagenumbering{arabic}
+  \begin{center}
+    {\huge\textbf{Numerical Linear Algebra - Sheet~\thesheet}
+
+    \textbf{Solutions}}\vskip6ex\end{center}}{}
+
+\newtheorem{Solution}{Solution}
+\newtheorem*{Solution*}{Solution}
+
+\newtheorem{classalgorithm}{Algorithm}
+\renewenvironment{Algorithm}[1][]{
+  \begin{minipage}[H]{0.05\textwidth}
+    \hspace{0.5ex}
+  \end{minipage}%
+  \begin{minipage}[H]{0.9\textwidth}
+  }{\end{minipage}}
