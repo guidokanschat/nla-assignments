@@ -1,0 +1,296 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{mathsim}[2013/08/01 Mathematical Methods of Simulation]
+
+\RequirePackage[fileprefix=blocks/]{slidetheorem}
+\RequirePackage{amsthm,amsfonts,amssymb,mathrsfs,stmaryrd}
+\RequirePackage{amsmath,amstext,amscd,mathtools}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{makeidx}
+\RequirePackage{babel}
+\RequirePackage{hyperref}
+\RequirePackage{cleveref}
+\RequirePackage{enumerate}
+\RequirePackage{stringstrings}
+\RequirePackage{xr}
+\RequirePackage{nicefrac}
+\RequirePackage{gensymb}
+\RequirePackage{graphicx}
+\RequirePackage{xcolor,framed}
+\RequirePackage{subfigure}
+\RequirePackage{comment}
+\RequirePackage{listings}
+\RequirePackage{algpseudocode}
+\RequirePackage{tikz,tikzscale,tikz-cd}
+\usetikzlibrary{calc}
+\usetikzlibrary{math}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{positioning}
+\RequirePackage{tcolorbox}
+\RequirePackage{adjustbox}
+
+\newif\ifm@thsimfinal\m@thsimfinalfalse
+\DeclareOption{final}{\m@thsimfinaltrue}
+\ProcessOptions\relax
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% todo environment
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifm@thsimfinal
+\excludecomment{todo}
+\else
+\newenvironment{todo}{%
+  \def\FrameCommand{\fboxsep=\FrameSep \fcolorbox{black}{yellow}}%
+  \color{black}\MakeFramed {\FrameRestore}}%
+ {\endMakeFramed}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands for beamer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\sectoc{\tableofcontents[currentsection,hideothersubsections]}
+\def\subtoc{\tableofcontents[sectionstyle=shaded/hide,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/show/hide/hide]}
+\def\subsubtoc{\tableofcontents[sectionstyle=show/hide,subsectionstyle=show/hide/hide,subsubsectionstyle=show/shaded/hide/hide]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Counters and their representation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifdefined\thechapter\renewcommand{\thesection}{\thechapter.\arabic{section}}\fi
+\numberwithin{slidetheorem}{section}
+\parindent0pt
+\parskip2ex plus 1ex minus 1ex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theorem and related environments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newtheorem{theorem}{\iflanguage{german}{Satz}{}\iflanguage{english}{Theorem}{}}[chapter]
+\newtheorem{lemma}[slidetheorem]{Lemma}
+\newtheorem{corollary}[slidetheorem]{\iflanguage{german}{Korollar}{}\iflanguage{english}{Corollary}{}}
+\theoremstyle{definition}
+\newtheorem{assumption}[slidetheorem]{Assumption}
+\newtheorem{definition}[slidetheorem]{Definition}
+\newtheorem{algorithm}[slidetheorem]{\iflanguage{german}{Algorithmus}{}\iflanguage{english}{Algorithm}{}}
+\newtheorem{example}[slidetheorem]{\iflanguage{german}{Beispiel}{}\iflanguage{english}{Example}{}}
+%\theoremstyle{remark}
+\newtheorem{intro}[slidetheorem]{%\iflanguage{german}{Einleitung}{}\iflanguage{english}{Introduction}
+}{}
+\newtheorem{notation}[slidetheorem]{Notation}
+\newtheorem{remark}[slidetheorem]{\iflanguage{german}{Bemerkung}{}\iflanguage{english}{Remark}{}}
+\newtheorem{notes}[slidetheorem]{\iflanguage{german}{Anmerkung}{}\iflanguage{english}{Note}{}}
+\newtheorem{review}[slidetheorem]{\iflanguage{german}{Zusammenfassung}{}\iflanguage{english}{Review}{}}
+\newtheorem{problem}[slidetheorem]{\iflanguage{german}{Aufgabe}{}\iflanguage{english}{Problem}{}}
+\newslidetheorem{Remark}
+\newslidetheorem{Algorithm}
+\newslidetheorem{Bemerkung}
+\newslidetheorem{Algorithmus}
+\newslidetheorem{Fazit}
+\newslidetheorem{Quiz}
+
+% Definitions for index
+\def\defindex#1{\index{#1}}
+\def\define#1{\textbf{#1}\defindex{#1}}
+\def\putindex#1{#1\index{#1}}
+
+% Definitions for symbols in order to easily change notation later
+
+% Finite elements
+\def\mesh{\mathbb T}
+\def\cell{T}
+\def\faces{\mathbb F}
+\def\face{F}
+\def\reference#1{\widehat{#1}}
+\def\refcell{\reference\cell}
+\def\refface{\reference\face}
+\def\refgrad{\reference{\nabla}}
+\def\refp{\reference{p}}
+\def\refu{\reference{u}}
+\def\refv{\reference{v}}
+\def\refx{\reference{x}}
+\def\refy{\reference{y}}
+\def\refom{\reference{\omega}}
+\def\refphi{\reference{\phi}}
+\def\refrho{\reference{\rho}}
+\def\refvx{\reference{\vx}}
+\def\refvy{\reference{\vy}}
+\def\refvxo{\reference{\vxo}}
+\def\refvu{\reference{\vu}}
+\def\refvv{\reference{\vv}}
+\def\refmap{\Phi}
+\def\jacobian{\mathrm D}
+\def\vertex{\mathbf X}
+\def\nodal{\mathscr N}
+\def\shapespace{\mathscr P}
+\def\jmp#1{\left\llbracket#1\right\rrbracket}
+\def\mvl#1{\{\!\!\{#1\}\!\!\}}
+%\def\mvl#1{\left\langle#1\right\rangle}
+\def\lifting#1{\mathscr L #1}
+\let\ipp\sigma
+\def\Res{\operatorname{Res}}
+
+% Single letters
+\def\C{\mathbb C}
+\def\Cnn{\C^{n\times n}}
+\def\co{\mathcal C}
+\def\coo{\mathcal C_{00}^\infty}
+\def\sdim{n}
+\let\domain\Omega
+\def\F{\mathbb F}
+\def\n{\mathbf n}
+\def\bigo{\mathcal O}
+\def\smallo{o}
+\def\P{\mathbb P}
+\def\Q{\mathbb Q}
+\def\Pol{\mathcal P}
+\def\R{\mathbb R}
+\def\Rnn{\R^{n\times n}}
+\def\T{\mathbb T}
+\def\Z{\mathbb Z}
+\let\epsilon\varepsilon
+\newcommand{\eps}{\texttt{eps}}
+\let\rho\varrho
+\let\theta\vartheta
+\let\phi\varphi
+\let\ellipa\gamma
+\def\ellipc{\gamma_c}
+\let\infsupc\beta
+\def\bounda{M_a}
+\def\boundb{M_b}
+
+% Matrices
+\def\mata{\mathbf A}
+\def\matb{\mathbf B}
+\def\matc{\mathbf C}
+\def\matd{\mathbf D}
+\def\mate{\mathbf E}
+\def\matg{\mathbf G}
+\def\givens{\matg}
+\def\matH{\mathbf H}
+\def\matl{\mathbf L}
+\def\matlambda{\boldsymbol\Lambda}
+\def\matm{\mathbf M}
+\def\matp{\mathbf P}
+\def\matq{\mathbf Q}
+\def\matr{\mathbf R}
+\def\mats{\mathbf S}
+\def\matsigma{\boldsymbol\Sigma}
+\def\matt{\mathbf T}
+\def\matu{\mathbf U}
+\def\matv{\mathbf V}
+\def\matw{\mathbf W}
+\def\matx{\mathbf X}
+\def\maty{\mathbf Y}
+\def\matz{\mathbf Z}
+\def\identity{\mathbb I}
+\def\id{\mathbb I}
+\def\fundam{Y}
+\def\fundamental(#1;#2){\fundam(#1;#2)}
+\def\verfahren{F}
+\def\cond{\operatorname{cond}}
+\def\mat#1{\mathbf{#1}}
+\def\vec#1{\mathbf{#1}}
+\def\transpose{*}
+
+% vectors
+\def\va{\mathbf a}
+\def\vb{\mathbf b}
+\def\ve{\mathbf e}
+\def\vf{\mathbf f}
+\def\vg{\mathbf g}
+\def\vh{\mathbf h}
+\def\vm{\mathbf m}
+\def\vn{\mathbf n}
+\def\vp{\mathbf p}
+\def\vq{\mathbf q}
+\def\vr{\mathbf r}
+\def\vx{\mathbf x}
+\def\vy{\mathbf y}
+\def\vz{\mathbf z}
+\def\vxo{\mathbf{x_0}}
+\def\vu{\mathbf u}
+\def\vv{\mathbf v}
+\def\vw{\mathbf w}
+\def\vecx{\vec x}
+\def\vH{\mathbf H}
+\def\vL{\mathbf L}
+\def\vV{\mathbf V}
+\def\vlambda{\boldsymbol\lambda}
+
+% Spaces, norms, and forms
+\def\Alt{\operatorname{Alt}}
+\def\krylov{\mathscr K}
+\def\dom#1{\operatorname{dom}\left(#1\right)}
+\def\ker#1{\operatorname{ker}\left(#1\right)}
+\def\range#1{\operatorname{im}\left(#1\right)}
+\DeclareMathOperator{\ran}{ran}
+% \def\rank#1{\operatorname{rank}\left(#1\right)}
+\DeclareMathOperator{\rank}{rank}
+\def\spann#1{\operatorname{span}\left\{#1\right\}}
+\def\polar#1{{#1}^{\perp_\flat}}
+\def\dualpolar#1{{#1}^{\perp_\sharp}}
+\def\ortho#1{{#1}^\perp}
+\def\Hcurl{\vH^{\text{curl}}}
+\def\Hdiv{\vH^{\text{div}}}
+
+% Polynomials
+\def\pol{\mathbb P} % polynomial space P_n
+\def\plegendre{L}
+\def\plagrange{\ell}
+\def\pnewton{\omega}
+\def\pchebyshev{T}
+
+\DeclarePairedDelimiterX\@scal[2]{\langle}{\rangle}{#1,#2}
+\DeclarePairedDelimiterX\@Scal[2]{\langle\!\langle}{\rangle\!\rangle}{#1,#2}
+\DeclarePairedDelimiterX\@form[2]{(}{)}{#1,#2}
+\DeclarePairedDelimiterX\@forme[2]{\langle}{\rangle}{#1,#2}
+\def\scal(#1,#2){\@scal*{#1}{#2}}
+\def\Scal(#1,#2){\@Scal*{#1}{#2}}
+\def\form(#1,#2){\@form*{#1}{#2}}
+\def\forme(#1,#2){\@forme*{#1}{#2}}
+\def\mixedform(#1,#2,#3,#4){\@form*%
+  {\begin{pmatrix}#1\\#2\end{pmatrix}}%
+  {\begin{pmatrix}#3\\#4\end{pmatrix}}}
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\snorm}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\tnorm}{\vert\!\lvert\!\lvert}{\rvert\!\rvert\!\rvert}
+
+% Operators
+\def\deformed#1{\widehat{#1}}
+\def\curl{\nabla\!\times\!}
+\def\vcurl{\nabla\!\times\!}
+\def\diam{\operatorname{diam}}
+\def\dist{\operatorname{dist}}
+\def\div{\nabla\!\cdot\!}
+\def\strain#1{\epsilon(#1)}
+\def\supp{\operatorname{supp}}
+\def\esssup{\operatorname{ess sup}}
+\def\osc{\operatorname{osc}}
+\def\vol{\operatorname{vol}}
+\def\ediff{d} % exterior derivative
+% differentials for integrals
+\let\d\partial
+\def\diffd{\mathrm{d}}
+\def\diffq[#1]{\frac{\mathrm{d}}{\mathrm{d}#1}}
+\def\pdiffq[#1]{\frac{\partial}{\partial #1}}
+\def\dlambda{\,\diffd \lambda}
+\def\dl{\,\diffd \ell}
+\def\dr{\,\diffd r}
+\def\ds{\,\diffd s}
+\def\dt{\,\diffd t}
+\def\dx{\,\diffd x}
+\def\dy{\,\diffd y}
+\def\dvx{\,\diffd \vx}
+\def\dvy{\,\diffd \vy}
+% reference coordinates
+\def\dvxref{\,\diffd \reference \vx}
+\def\dxref{\,\diffd \reference x}
+\def\dsref{\,\diffd \reference s}
+\def\diag{\operatorname{diag}}
+\endinput
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 
