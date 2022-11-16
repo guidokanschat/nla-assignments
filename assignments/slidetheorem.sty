@@ -1,0 +1,95 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{slidetheorem}[2018/04/17 SlideTheorem]
+
+\RequirePackage{kvoptions}
+% Option slides: if beamer class it's default, otherwise not.
+\@ifclassloaded{beamer}{\DeclareBoolOption[true]{slides}}{\DeclareBoolOption[false]{slides}}
+
+% Option notes: the opposite of slides.
+\DeclareComplementaryOption{notes}{slides}
+
+% Option fileprefix: prefix for every file. End with '/' to use subdirectory
+\DeclareStringOption{fileprefix}
+
+\ProcessKeyvalOptions*
+
+\RequirePackage{comment}
+\RequirePackage{stringstrings}
+\RequirePackage{xcolor,tcolorbox}
+
+\newcommand{\showslides}{\ifslidetheorem@slides Slides\else Notes\fi}
+
+\newcounter{slidetheorem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Outputting slides for beamer file
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newwrite\sthm@list
+\immediate\openout\sthm@list=\jobname.stm
+
+\renewcommand\ThisComment[1]{%
+  \immediate\write\CommentStream{\unexpanded{#1}}%
+}
+
+\def\slidetheorem@open#1!{%
+  \immediate\write\sthm@list{\unexpanded{\frame{\input{#1}}}}
+}
+
+\long\def\newslidetheorem#1{%
+  \csarg\def{After#1Comment}{%
+    \immediate\write\CommentStream{\unexpanded{\end{stheorem}}}%
+  \CloseAndInputCutFile}%
+  \csarg\def{After#1*Comment}{%
+    \immediate\write\CommentStream{\unexpanded{\end{stheorem}}}%
+  \CloseAndInputCutFile}%
+  \expandafter\def\csname#1\endcsname##1{\endgroup%
+    \refstepcounter{slidetheorem}%
+    \label{#1:##1}
+    \edef\CommentCutFile{\slidetheorem@fileprefix#1-##1.tex}
+    \expandafter\slidetheorem@open\CommentCutFile!
+    \SetUpCutFile
+    \immediate\write\CommentStream{\unexpanded{\begin{stheorem}{#1}{}}(\theslidetheorem)
+      }
+      \ProcessComment{#1}}
+  \expandafter\def\csname#1*\endcsname##1##2{\endgroup%
+    \refstepcounter{slidetheorem}%
+    \label{#1:##1}%
+    \index{##2}
+    \edef\CommentCutFile{\slidetheorem@fileprefix#1-##1.tex}
+    \expandafter\slidetheorem@open\CommentCutFile!
+    \SetUpCutFile
+    \immediate\write\CommentStream{\unexpanded{\begin{stheorem}{#1}{##2}}(\theslidetheorem)
+      }
+     \ProcessComment{#1*}}
+    \CommentEndDef{#1}
+    \CommentEndDef{#1*}}
+
+\newcommand{\slideref}[2]{#1~\ref{#1:#2}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theorem and related environments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The slides version first, then the notes version
+\ifslidetheorem@slides
+\def\stheorem#1#2(#3){\begin{block}{#3 \capitalizewords{#1}%
+      \def\tmp{#2}\ifx\tmp\empty{}\else (#2)\fi}}
+\def\endstheorem{\end{block}}
+\else
+\def\stheorem#1#2(#3){\begin{tcolorbox}
+    \textbf{#3 \capitalizewords{#1}%
+      \def\tmp{#2}\ifx\tmp\empty{}\else~(#2)\fi:}}
+\def\endstheorem{\end{tcolorbox}}
+\fi
+
+
+\newslidetheorem{Definition}
+\newslidetheorem{Theorem}
+\newslidetheorem{Lemma}
+\newslidetheorem{Corollary}
+\newslidetheorem{Assumption}
+\newslidetheorem{Example}
+\newslidetheorem{Notation}
+\newslidetheorem{Problem}
+
+\newslidetheorem{Satz}
+\newslidetheorem{Korollar}
+\newslidetheorem{Beispiel}
+\newslidetheorem{Aufgabe}
