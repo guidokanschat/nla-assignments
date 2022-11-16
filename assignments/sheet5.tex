@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until November 25, 2022, 2pm.]
+  \label{sheet5}
+
+  \begin{Problem}
+    Show that a normal triangular matrix is diagonal. \textit{Hint:}
+    look at the norms of $\mata \ve_i$ and $\mata^*\ve_i$.
+  \end{Problem}
+
+  \begin{Problem}
+    Prove that in case of a normal real matrix, for each complex
+    eigenvalue pair there is a $2\times 2$ matrix with according
+    invariant subspace.
+    \begin{enumerate}[(a)]
+    \item Show that complex eigenvalues of a real matrix come in
+      complex conjugate pairs.
+    \item Show that the eigenvectors are of the form $\vu\pm i\vv$.
+    \item Choose real linear combinations of these vectors to obtain
+      the $2\times 2$ block.
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}
+    Provide the following steps of Lemma 1.5.11 in the lecture notes
+    (explicit double shift).
+    \begin{enumerate}[(a)]
+    \item Show that $\matq_1\matq_2\matr_2\matr_1$ represents the QR
+      factorization of a real matrix
+      $\matm = (\matH - \sigma_1\id)(\matH - \sigma_2\id)$.
+    \item Show that $\matq_1\matq_2$ is the orthogonal matrix that
+      implements the similarity transformation of $\matH$ to obtain
+      $\matH_2$.
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}[Programming]
+    Implement the symmetric QR step with implicit shift (Algorithm
+    1.5.6 in lecture notes) for a symmetric, unreduced, tridiagonal
+    matrix $\matt$ by observing the following steps:
+    \begin{enumerate}[(a)]
+    \item Store $\matt$ in two vectors, one for the diagonal, and one
+      for the subdiagonal entries.
+    \item Implement the Givens rotation $\matg_{12}$ and think about
+      where to store the additional non-zero entry $t_{31}$.
+    \item Implement the additional Givens rotations for this data
+      structure.
+    \item Use this to compute the eigenvalues of the matrix
+      $\mata_n=\operatorname{tridiag}(-1.,2.,-1.)$ in dimension
+      $n=10$.
+    \end{enumerate}
+  \end{Problem}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 
