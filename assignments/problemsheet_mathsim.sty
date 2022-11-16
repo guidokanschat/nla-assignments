@@ -6,16 +6,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\bm}{\mathbf}
-\newcommand{\nfrac}[2]{#1/#2}
 \newcommand{\set}[1]{\left\{#1\right\}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Conditionals
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \newif\ifsolution
-% % \solutiontrue
-% \solutionfalse
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % Counters and their representation
@@ -27,6 +18,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newtheorem{classproblem}{Problem}
 \renewenvironment{Problem}{\begin{classproblem}}{\end{classproblem}}
+\newtheorem{Solution}{Solution}
+\newtheorem*{Solution*}{Solution}
+
 \newenvironment{Sheet}[1][???]{%
   \pagenumbering{arabic}
   \refstepcounter{sheet}
@@ -36,15 +30,13 @@
 
     #1 \vskip6ex\end{center}}{}
 
-\newenvironment{SolutionSheet}{%
+\newenvironment{SolutionSheet}[1][???]{%
   \pagenumbering{arabic}
+  \setcounter{Solution}{0}
   \begin{center}
-    {\huge\textbf{Numerical Linear Algebra - Sheet~\thesheet}
+    {\huge\textbf{Numerical Linear Algebra - Sheet~#1}
 
     \textbf{Solutions}}\vskip6ex\end{center}}{}
-
-\newtheorem{Solution}{Solution}
-\newtheorem*{Solution*}{Solution}
 
 \newtheorem{classalgorithm}{Algorithm}
 \renewenvironment{Algorithm}[1][]{
