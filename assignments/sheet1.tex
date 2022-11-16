@@ -4,6 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{Sheet}[to be handed in until October 28, 2022, 2pm.]
+  \label{sheet1}
   
 \begin{Problem}
   Review the following items and write down at least one of the
@@ -22,40 +23,40 @@
     \end{gather*}
   \item Theorem: Best Approximation Theorem
 
-    Let $W$ be a subspace of $\R^n$, let $\bm x$ be any vector in
-    $\R^n$, and let $\tilde{\bm x}$ be the orthogonal projection of
-    $\bm x$ onto $W$. Then $\tilde{\bm x}$ is the closest point in $W$
-    to $\bm x$, in the sense that
+    Let $W$ be a subspace of $\R^n$, let $\vx$ be any vector in
+    $\R^n$, and let $\tilde{\vx}$ be the orthogonal projection of
+    $\vx$ onto $W$. Then $\tilde{\vx}$ is the closest point in $W$ to
+    $\vx$, in the sense that
     \begin{gather*}
-      \norm{\bm x - \tilde{\bm x}} < \norm{\bm x - \bm w}
+      \norm{\vx - \tilde{\vx}} < \norm{\vx - \vw}
     \end{gather*}
-    for all $\bm w$ in $W$ distinct from $\bm x$.
+    for all $\vw$ in $W$ distinct from $\vx$.
   \item Theorem: Orthogonal projection in orthonormal basis
     
-    Let $B = \{\bm u_1,\bm u_2, ...,\bm u_p\}$ be an orthonormal basis
-    of a subspace $W$ of a finite-dimensional space $V$ with inner
-    product $\scal(\cdot,\cdot)$. Then, the orthogonal projection
-    $P_i$ of any vector $\bm v\in V$ onto $\bm u_i$, and the
-    orthogonal projection $P_W$ of any vector $\bm v\in V$ onto $W$
-    have the following expressions, respectively:
+    Let $B = \{\vu_1,\vu_2, ...,\vu_p\}$ be an orthonormal basis of a
+    subspace $W$ of a finite-dimensional space $V$ with inner product
+    $\scal(\cdot,\cdot)$. Then, the orthogonal projection $P_i$ of any
+    vector $\vv\in V$ onto $\vu_i$, and the orthogonal projection
+    $P_W$ of any vector $\vv\in V$ onto $W$ have the following
+    expressions, respectively:
     \begin{gather*}
-      P_i(\bm v) = \scal(\bm v, \bm u_i) \bm u_i,\qquad i = 1, 2, ..., p,
+      P_i(\vv) = \scal(\vv, \vu_i) \vu_i,\qquad i = 1, 2, ..., p,
       \\
-      P_W(\bm v) = \sum_{i=1}^p \scal(\bm v, \bm u_i) \bm u_i,
+      P_W(\vv) = \sum_{i=1}^p \scal(\vv, \vu_i) \vu_i,
     \end{gather*}
     and
     \begin{gather*}
-      \bm v = P_W(\bm v) + \bm z,\qquad \bm z \perp W.
+      \vv = P_W(\vv) + \vz,\qquad \vz \perp W.
     \end{gather*}
 
   \item Theorem: Parseval identity
 
     Suppose that $W$ is a finite-dimensional linear space with inner
-    product $\scal(\cdot,\cdot)$. Let $\{\bm e_i\}$, $i=1,...,n$ be an
-    orthonormal basis of $W$. Then, for every $\bm w\in W$ it holds
+    product $\scal(\cdot,\cdot)$. Let $\{\ve_i\}$, $i=1,...,n$ be an
+    orthonormal basis of $W$. Then, for every $\vw\in W$ it holds
     \begin{gather*}
-      \sum_{i=1}^n \abs{\scal(\bm w,\bm e_i)}^2
-      = \sum_{i=1}^n \norm{\bm w}^2.
+      \sum_{i=1}^n \abs{\scal(\vw,\ve_i)}^2
+      = \sum_{i=1}^n \norm{\vw}^2.
     \end{gather*}
   \end{itemize}
 \end{Problem}
@@ -85,8 +86,8 @@
     $n$-dimensional complex vectors.
   \item Computes the Gram matrix of the obtained orthonormal basis
   \end{itemize}
-  Test your program on the set of vectors: $\{\bm v_k\}$, $k=1,...,n$,
-  $(\bm v_k)_j = e^{\frac{i\alpha_k j}{n}}$, $\alpha_k = 1 +
+  Test your program on the set of vectors: $\{\vv_k\}$, $k=1,...,n$,
+  $(\vv_k)_j = e^{\frac{i\alpha_k j}{n}}$, $\alpha_k = 1 +
   \frac1k$. Investigate the obtained Gram matrix.
 \end{Problem}
 

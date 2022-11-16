@@ -4,6 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{Sheet}[to be handed in until November 04, 2022, 2pm.]
+  \label{sheet2}
 
   \begin{Problem}
     Show that a matrix is normal, if and only if it is unitarily
@@ -47,15 +48,15 @@
     \begin{enumerate}
     \item Compute the eigenvalues and eigenvectors of $\mata$.
     \item (Programming) Write a program which computes the sequence
-      $\bm x^{(n)}\in\R^2$ defined as
+      $\vx^{(n)}\in\R^2$ defined as
       \begin{align*}
-        \bm x^{(n)} &= \mata \bm x^{(n-1)}, \\
-        \bm x^{(0)} &= \bm x^{*},
+        \vx^{(n)} &= \mata \vx^{(n-1)}, \\
+        \vx^{(0)} &= \vx^{*},
       \end{align*}
-      for $\bm x^{*} = (1,\ 0)^T$, $c = 0.1$, and
+      for $\vx^{*} = (1,\ 0)^T$, $c = 0.1$, and
       $\phi=\frac\pi4$. Try playing with different values of those
       parameters.
-    \item Is there a limit of $\bm x^{(n)}$? What is about the case
+    \item Is there a limit of $\vx^{(n)}$? What is about the case
       $c=1$?
     \item Compute the limit: $\lim_{n\to\infty}\mata^n$.
     \end{enumerate}

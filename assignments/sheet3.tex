@@ -4,6 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{Sheet}[to be handed in until November 11, 2022, 2pm.]
+  \label{sheet3}
 
   \begin{Problem}
     Consider a Hermitian matrix $\mata\in\C^{n\times n}$ and a unitary
@@ -68,18 +69,25 @@
         \epsilon& 0& 0& 5& 4& 30
       \end{pmatrix}
     \end{gather*}
-    % with $\epsilon=1$
     using the shifted (inverse) power method by observing the
     following steps:
     \begin{enumerate}[(a)]
-    \item Consider the matrix $\mata_0$ with $\epsilon=0$ and examine
+    \item\label{sheet3:prob4:parta} Consider the matrix $\mata_0$ with $\epsilon=0$ and examine
       the structure of the eigenvalue problem.
     \item Compute all eigenvalues and eigenvectors of $\mata_0$.
-    \item Make an \textit{educated} guess of the eigenvalues of
-      $\mata_1$ and try computing those.
     \item Would the strategy you proposed in
       Problem~\ref{problem:shift} allow you to compute all 6
       eigenvalues?
+      \begin{todo}
+        Rewrite: Does the algorithm work, if you use Gerschgorin for
+        ...
+      \end{todo}
+    \item Make an \textit{educated} guess of the eigenvalues of
+      $\mata_1$ and try computing those.
+      \begin{todo}
+        Can you use part \eqref{sheet3:prob4:parta} to get something
+        better
+      \end{todo}
     \end{enumerate}
   \end{Problem}
 \end{Sheet}
