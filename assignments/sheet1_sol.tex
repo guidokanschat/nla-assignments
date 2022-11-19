@@ -6,12 +6,82 @@
 \begin{SolutionSheet}[\ref{sheet1}]
 
   \begin{Solution}
+    \begin{itemize}
+      \item \textit{Def projection:} Let $V$ be a vectorspace (VS). \\
+        A linear map $P: V \to V$ is called projection $\ \iff \ P^2 = P$
+      \item \textit{Def orthogonal projection:} Let $V$ be a VS, $W \subseteq V$ a subspace 
+        and $\langle \cdot \; , \; \cdot \rangle$ be an inner product on V. \\
+        $P_w$ is called orthogonal projection $\ \iff \ P_w$ is a projection and 
+        $P_w(v)-v \bot W \quad \forall v\in V$
+      \item \textit{Theorem:} Orthogonal projection is uniquely determined by the subspace \\
+        \textit{Proof:} Existance: Gram Schmidt \\
+        Uniqueness: Let $V$ finite dim VS with inner product $\langle \cdot \; , \; \cdot \rangle$,
+        $W \subseteq V$ subspace, $P_w$ and $P_w'$ two orthogonal projections on $W$. \\
+        $\implies P_w(v)-v \bot W \forall v \in V$ 
+        \begin{align*}
+          \langle P_w(v) - P_w'(v), w \rangle &= \langle (P_w(v) - v) - (P_w(v) - v), w \rangle \\
+          &= \langle P_w(v) - v , w \rangle - \langle P_w'(v) - v , w \rangle \\
+          &= 0 - 0 \ = \ 0 \quad \forall v\in V, \ \forall w\in W
+        \end{align*}
+        $\implies P_w(v) - P_w'(v) = 0 \quad \forall v \in V$ \\
+        $\implies P_w = P_w'$
+      \item \textit{Theorem (Best Approximation):} Let $W \subseteq \mathbb{R}^n$ subspace,
+        $\widetilde{x}$ the orthogonal projection of $x \in \mathbb{R}^n$ in $W$ \\
+        $\implies \norm{x - \widetilde{x}} \leqslant \norm{x - w} \forall w \in W$ \\
+        \textit{Proof:}  
+        \begin{align*}
+          \norm{x - w}^2 = & \norm{(x - \widetilde{x}) + (\widetilde{x} - w)}^2 \\
+          \stackrel{\text{Pythagoras}}{=} & \norm{(x - \widetilde{x})} + \norm{(\widetilde{x} - w)}^2
+          \leqslant \norm{(\widetilde{x} - w)}^2
+        \end{align*}
+      \item \textit{Theorem:} Orthogonal projection in orthonormal basis \\
+        \textit{Proof:} Just compute and see $P_w$ is an orthogonal projection
+      \item \textit{Theorem (Parseval identity):} Let $V$ VS, $\{e_1, ... ,e_n\}$ an orthogonal basis. 
+        Then $\forall x \in V :$ 
+        \begin{equation}
+          x = \sum\langle x, e_i \rangle e_i
+        \end{equation}
+        \textit{Proof:}
+        $x = \sum a_i e_i \\
+        \implies \langle x , e_j \rangle = \sum a_i \langle e_i, e_j \rangle = a_j \\
+        \implies x = \sum \langle x, e_i \rangle e_i \\
+        \implies \norm{x}^2 = \langle x,x \rangle = \langle\sum \langle
+          a,e_i\rangle e_i,\sum \langle a,e_j\rangle e_j \rangle \\
+        \phantom{\implies \norm{x}^2 = \langle x,x \rangle} = \sum \sum \langle x, e_i \rangle\langle x,e_j \rangle\langle e_i,e_j \rangle \\
+        \phantom{\implies \norm{x}^2 = \langle x,x \rangle} = \sum | \langle x, e_i \rangle |^2$
+    \end{itemize}
   \end{Solution}
 
   \begin{Solution}
+    \textit{Claim:} Every finite-dim VS with a scalar product has an orthonormal basis.\\
+    \textit{Proof:} Use Gram-Schmidt on any basis of the VS.
   \end{Solution}
 
   \begin{Solution}
+    Let $M=\big(\begin{smallmatrix}
+      c & s\\
+      -s & c
+    \end{smallmatrix}\big) \in \mathbb{R}^{2\times 2} \quad$ with $c = cos(\alpha), \ s = sin(\alpha), \ \alpha \in \mathbb{R}$ \\
+    \begin{itemize}
+      \item \textit{Eigenvalues:} $0 = det(M-\lambda I) = \lambda^2 - 2c\lambda + 1 \\
+        \implies \lambda_{1,2} \ = \ c \pm is \ = \ e^{\pm i\alpha}$ \\
+      \item \textit{Eigenvectors:} $(M-\lambda I)x = 0 \\
+        \lambda_1 = e^{i\alpha}: \quad x_1 = \alpha \big(\begin{smallmatrix}
+          1\\
+          i
+        \end{smallmatrix} \big)\\
+        Eig(\lambda_1) = span\{x_1\}
+        \lambda_2 = e^{-i\alpha}: \quad x_2 = \alpha \big(\begin{smallmatrix}
+          1\\
+          -i
+        \end{smallmatrix} \big)\\
+        Eig(\lambda_2) = span\{x_2\}$
+      \item $\alpha \in \pi \mathbb{Z} \ \implies \ M=\big(\begin{smallmatrix}
+          \pm 1 & 0\\
+          0 & \pm 1
+        \end{smallmatrix}\big) \\
+        \implies \lambda_{1,2} = \pm 1, \ Eig(\lambda_{1,2}) = \mathbb{C}^2$
+    \end{itemize}
   \end{Solution}
 
   \begin{Solution}[Programming]
