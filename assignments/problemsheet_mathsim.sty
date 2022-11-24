@@ -38,10 +38,22 @@
 
     \textbf{Solutions}}\vskip6ex\end{center}}{}
 
+\lstset{%
+  language=Python,numbers=left,%
+  resetmargins=true,xleftmargin=8pt,%
+  basicstyle=\small,numberstyle=\scriptsize}
+
 \newtheorem{classalgorithm}{Algorithm}
-\renewenvironment{Algorithm}[1][]{
-  \begin{minipage}[H]{0.05\textwidth}
-    \hspace{0.5ex}
+\newtheorem*{classalgorithm*}{Algorithm}
+\renewenvironment{Algorithm}[1][]{\par\medskip
+  \begin{minipage}[H]{0.03\textwidth}
+    \hfill
   \end{minipage}%
-  \begin{minipage}[H]{0.9\textwidth}
-  }{\end{minipage}}
+  \begin{minipage}[H]{0.94\textwidth}
+    % \begin{tcolorbox}[colback=white]%
+    \begin{classalgorithm*}[#1]\hfill%
+    }{\end{classalgorithm*}%
+    % \end{tcolorbox}%
+  \end{minipage}
+  \medskip
+}
