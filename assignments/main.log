@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.18)  2 DEC 2022 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.18)  2 DEC 2022 11:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1050,12 +1050,12 @@ l.16   \begin{Problem}
 pdfTeX warning (ext4): destination with the same identifier (name{classproblem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22   \begin{Problem}
+l.25   \begin{Problem}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28   \begin{Problem}
+l.31   \begin{Problem}
                       )
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -1184,7 +1184,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  144i,15n,146p,592b,767s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (14 pages, 253429 bytes).
+Output written on main.pdf (14 pages, 253624 bytes).
 PDF statistics:
  210 PDF objects out of 1000 (max. 8388607)
  157 compressed objects within 2 object streams
