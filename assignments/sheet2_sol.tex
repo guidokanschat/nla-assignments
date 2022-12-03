@@ -3,11 +3,13 @@
 % Solutions to Sheet 2
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
 \begin{SolutionSheet}[\ref{sheet2}]
 
   \begin{Solution}
-    \textit{Claim:} $A$ normal $\ \iff A = Q^{-1}BQ \ $ with $Q$ unitary, $B$ normal
-    \textit{Proof:} $"\implies ": \ A$ is normal, $A \sim A$ \\
+    \Claim $A$ normal $\ \iff A = Q^{-1}BQ \ $ with $Q$ unitary, $B$ normal
+    \Claim $"\implies ": \ A$ is normal, $A \sim A$ \\
     $"\Leftarrow ":$ Let $A$ be a unitarily similar to $B$, $B$ normal \\
     $ \implies BB^* = B^*B, \quad\exists Q \in U(n): A = Q^{-1}BQ$ \\
     $ \implies$ \begin{align*}
@@ -24,9 +26,9 @@
   \end{Solution}
 
   \begin{Solution}
-    \textit{Claim:} $A$ normal, $Av = \lambda v \ 
+    \Claim $A$ normal, $Av = \lambda v \ 
       \implies \ v^* A = \lambda v^*$ \\
-    \textit{Proof:} Let $A$ be a normal matrix. \\
+    \Proof Let $A$ be a normal matrix. \\
     $ $ note: \begin{equation*}
       \begin{split}
         \norm{Ax} = 0 \ &\iff \ \norm{Ax}^2 = 0 \quad 
@@ -40,23 +42,23 @@
     \end{equation*}
     $\implies$ \begin{equation*}
       (A - \lambda \mathbb{I})^* 
-        = (\overline{\rm A} - \overline{\rm \lambda \mathbb{I}})^T 
-        = (A^* - \overline{\lambda} \mathbb{I}) 
+        = (\overline{\rm A} - \overline{\rm \lambda \I})^T 
+        = (A^* - \overline{\lambda} \I) 
     \end{equation*}
     $ \implies$ \begin{align*} 
-      (A - \lambda \mathbb{I})(A - \lambda \mathbb{I})^* &= (A - \lambda \mathbb{I})(A^* - \overline{\lambda} \mathbb{I}) \\
-      &= AA^* - \lambda A^*\mathbb{I} - \overline{\lambda} A \mathbb{I} - \lambda \overline{\lambda} \mathbb{I} \\
-      &= A^*A - \overline{\lambda} A \mathbb{I} - \lambda A^*\mathbb{I} - \lambda \overline{\lambda} \mathbb{I} \\
-      &= (A^* - \overline{\lambda} \mathbb{I})(A - \lambda \mathbb{I}) \\
-      &= (A - \lambda \mathbb{I})^* (A - \lambda \mathbb{I})
+      (A - \lambda \I)(A - \lambda \I)^* &= (A - \lambda \I)(A^* - \overline{\lambda} \I) \\
+      &= AA^* - \lambda A^*\I - \overline{\lambda} A \I - \lambda \overline{\lambda} \I \\
+      &= A^*A - \overline{\lambda} A \I - \lambda A^*\I - \lambda \overline{\lambda} \I \\
+      &= (A^* - \overline{\lambda} \I)(A - \lambda \I) \\
+      &= (A - \lambda \I)^* (A - \lambda \I)
     \end{align*}
-    $ \implies A - \lambda \mathbb{I}$ is normal\\
+    $ \implies A - \lambda \I$ is normal\\
     \\
     Let $v$ be a (right) eigenvector to $\lambda$ \\
     $\begin{array}{ll}      
-      \implies &(A- \lambda \mathbb{I})v = 0 \\
-      \implies &(A- \lambda \mathbb{I})^*v = 0 \\
-      \implies &A^*v = \overline{\lambda} \mathbb{I}v \\
+      \implies &(A- \lambda \I)v = 0 \\
+      \implies &(A- \lambda \I)^*v = 0 \\
+      \implies &A^*v = \overline{\lambda} \I v \\
       \implies &v^T(A^*)^T = \overline{\lambda} v^T \\
       \implies &v^T \overline{A} = \overline{\lambda} v^T \\
       \implies &v*A = \lambda v^*
@@ -65,13 +67,9 @@
   \end{Solution}
 
   \begin{Solution} 
-    $M = \big(\begin{smallmatrix}
-      \eta & 1\\
-      \eta & \eta
-    \end{smallmatrix}\big)$ with $|\eta| << 1 \\
+    $M = $ \smatrix{\eta}{1}{\eta}{\eta} with $|\eta| << 1 \\
     \begin{array}{ll}
-      \implies & \lambda_{1,2}(M) = \eta \pm \sqrt{\eta}, \quad v_1 = \big(\begin{smallmatrix} \sqrt{\pm\eta} \\
-        1 \end{smallmatrix} \big) \\
+      \implies & \lambda_{1,2}(M) = \eta \pm \sqrt{\eta}, \quad v_1 =$ \svector{\sqrt{\pm\eta}}{1} $\\
       \implies & v_1 \text{almost parralel to} v_2 
     \end{array}$
     
@@ -79,10 +77,10 @@
     so $\widetilde{M}$ is a small change to $M$. \\
     \\
     $\begin{array}{lll} 
-      e.g. &\Delta M = -(\eta) \bigl( \begin{smallmatrix} 1 & 0 \\ 1&1 \end{smallmatrix} \bigr) \\
-      &\implies \widetilde{M} = \bigl( \begin{smallmatrix} 0 & 1 \\ 0&0 \end{smallmatrix} \bigr) \\
+      e.g. &\Delta M = -(\eta)$ \smatrix{1}{0}{1}{1}$ \\
+      &\implies \widetilde{M} =$ \smatrix{0}{1}{0}{0}$ \\
       &\implies \lambda_{1,2}(\widetilde{M}) = 0, \
-      &v_{1,2}(\widetilde{M}) = \bigl( \begin{smallmatrix} 1 \\ 0  \end{smallmatrix} \bigr) \implies \text{not conituous}
+      &v_{1,2}(\widetilde{M}) =$ \svector{1}{0} $\implies \text{not conituous}
     \end{array}$
   \end{Solution}
 
@@ -99,17 +97,15 @@
       \item $R$ orthogonal \\
         $\stackrel{\text{Lemma 1.1.13}}{\implies} A$ diagonalizable, $R$ orthogonal basis of eigenvectors \\
         $\implies \lambda_1 = 1, \ \lambda_2 = c, \quad
-        v_1 = \bigl( \begin{smallmatrix} \cos\phi \\ \sin\phi  \end{smallmatrix} \bigr)
-        v_2 = \bigl( \begin{smallmatrix} -\sin\phi \\ \cos\phi  \end{smallmatrix} \bigr)$
+        v_1 =$ \svector{\cos\phi}{\sin\phi}, $\ v_2 =$ \svector{-\sin\phi}{\cos\phi}
       \item (Programming)
-      \item $c=1 \ \implies \ A = \mathbb{I} \ \implies \ x^{(i)} = x^{(0)} \ \forall i$. \\
+      \item $c=1 \ \implies \ A = \I \ \implies \ x^{(i)} = x^{(0)} \ \forall i$. \\
         Since $A^n$ converges (see (4)), $A^nx$ converges, too.
-      \item \begin{align*}
-        lim_{n \to \infty} A^n &\stackrel{\text{R orthogonal}}{=} 
-        R^T lim_{n \to \infty}   \bigl( \begin{smallmatrix} 1 & \\ & c \end{smallmatrix} \bigr) R \\
-         &= R^T  \bigl( \begin{smallmatrix} 1 & \\ & 0  \end{smallmatrix} \bigr) R \\
-         &= \bigl( \begin{smallmatrix} (\cos\phi)^2 & -\sin\phi\cos\phi \\ -\sin\phi\cos\phi & (\sin\phi)^2  \end{smallmatrix} \bigr)
-      \end{align*}
+      \item $\begin{array}{ll}
+        lim_{n \to \infty} A^n &\stackrel{\text{R orthogonal}}{=} R^T \: lim_{n \to \infty}$ \smatrix{1}{}{}{c} $R \\
+        &= R^T$ \smatrix{1}{}{}{0} $R \\
+        &=$ \smatrix{(\cos\phi)^2}{-\sin\phi\cos\phi}{-\sin\phi\cos\phi}{(\sin\phi)^2} $
+      \end{array}$
     \end{enumerate}
   \end{Solution}
 

@@ -3,6 +3,12 @@
 % Solutions to Sheet 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\Claim}{\textit{Claim: }}
+\newcommand{\Proof}{\textit{Proof: }}
+\newcommand{\svector}[2]{$\bigl( \begin{smallmatrix} #1 \\ #2 \end{smallmatrix} \bigr)$}
+\newcommand{\smatrix}[4]{$\bigl( \begin{smallmatrix} #1&#2 \\ #3&#4 \end{smallmatrix} \bigr)$}
+\newcommand{\I}{\mathbb{I}}
+
 \begin{SolutionSheet}[\ref{sheet1}]
 
   \begin{Solution}
@@ -53,34 +59,22 @@
   \end{Solution}
 
   \begin{Solution}
-    \textit{Claim:} Every finite-dim VS with a scalar product has an orthonormal basis.\\
-    \textit{Proof:} Use Gram-Schmidt on any basis of the VS.
+    \Claim Every finite-dim VS with a scalar product has an orthonormal basis.\\
+    \Proof Use Gram-Schmidt on any basis of the VS.
   \end{Solution}
 
   \begin{Solution}
-    Let $M=\big(\begin{smallmatrix}
-      c & s\\
-      -s & c
-    \end{smallmatrix}\big) \in \mathbb{R}^{2\times 2} \quad$ with $c = cos(\alpha), \ s = sin(\alpha), \ \alpha \in \mathbb{R}$ \\
+    Let $M=$ \smatrix{c}{s}{-s}{c}$ \in \mathbb{R}^{2\times 2} \quad$ with $c = cos(\alpha), \ s = sin(\alpha), \ \alpha \in \mathbb{R}$ \\
     \begin{itemize}
-      \item \textit{Eigenvalues:} $0 = det(M-\lambda I) = \lambda^2 - 2c\lambda + 1 \\
+      \item \textit{Eigenvalues:} $0 = det(M-\lambda \I) = \lambda^2 - 2c\lambda + 1 \\
         \implies \lambda_{1,2} \ = \ c \pm is \ = \ e^{\pm i\alpha}$ \\
       \item \textit{Eigenvectors:} $(M-\lambda I)x = 0 \\
-        \lambda_1 = e^{i\alpha}: \quad x_1 = \alpha \big(\begin{smallmatrix}
-          1\\
-          i
-        \end{smallmatrix} \big)\\
-        Eig(\lambda_1) = span\{x_1\}
-        \lambda_2 = e^{-i\alpha}: \quad x_2 = \alpha \big(\begin{smallmatrix}
-          1\\
-          -i
-        \end{smallmatrix} \big)\\
-        Eig(\lambda_2) = span\{x_2\}$
-      \item $\alpha \in \pi \mathbb{Z} \ \implies \ M=\big(\begin{smallmatrix}
-          \pm 1 & 0\\
-          0 & \pm 1
-        \end{smallmatrix}\big) \\
-        \implies \lambda_{1,2} = \pm 1, \ Eig(\lambda_{1,2}) = \mathbb{C}^2$
+        \lambda_1 = e^{i\alpha}: \quad x_1 = \alpha $ \svector{1}{i} \\
+        $Eig(\lambda_1) = span\{x_1\} \\
+        \lambda_2 = e^{-i\alpha}: \quad x_2 = \alpha $\svector{1}{-i} \\
+        $Eig(\lambda_2) = span\{x_2\}$
+      \item $\alpha \in \pi \mathbb{Z} \ \implies \ M=$ \smatrix{\pm 1}{0}{0}{\pm 1} \\
+        $\implies \lambda_{1,2} = \pm 1, \ Eig(\lambda_{1,2}) = \mathbb{C}^2$
     \end{itemize}
   \end{Solution}
 
