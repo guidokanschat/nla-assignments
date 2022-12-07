@@ -7,11 +7,23 @@
 % Commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\nfrac}[2]{#1/#2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % Counters and their representation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcounter{sheet}
+
+% cleveref customization
+\renewcommand{\cref}{\Cref}
+\makeatletter
+\if@cref@capitalise
+\crefname{sheet}{Sheet}{Sheets}
+\else
+\crefname{sheet}{sheet}{sheets}
+\fi
+\makeatother
+\Crefname{sheet}{Sheet}{Sheets}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Theorem and related environments
