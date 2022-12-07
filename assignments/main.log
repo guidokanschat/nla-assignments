@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.18)  3 DEC 2022 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.18)  7 DEC 2022 14:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -745,65 +745,160 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \c@classproblem=\count368
 \c@Solution=\count369
 \c@classalgorithm=\count370
+) (c:/texlive/2022/texmf-dist/tex/latex/pythontex/pythontex.sty
+Package: pythontex 2021/06/06 v0.18 execute and typeset Python code and other languages
+ (c:/texlive/2022/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+ (c:/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2022/06/06 4.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count371
+\FV@InFile=\read5
+\FV@TabBox=\box79
+\c@FancyVerbLine=\count372
+\FV@StepNumber=\count373
+\FV@OutFile=\write6
+) (c:/texlive/2022/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+ (c:/texlive/2022/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (c:/texlive/2022/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count374
+\output=\toks52
+\linenoprevgraf=\count375
+\linenumbersep=\dimen305
+\linenumberwidth=\dimen306
+\c@linenumber=\count376
+\c@pagewiselinenumber=\count377
+\c@LN@truepage=\count378
+\c@internallinenumber=\count379
+\c@internallinenumbers=\count380
+\quotelinenumbersep=\dimen307
+\bframerule=\dimen308
+\bframesep=\dimen309
+\bframebox=\box80
+LaTeX Info: Redefining \\ on input line 3056.
 )
-\tikzscale@accuracy=\skip73
+\c@FV@TrueTabGroupLevel=\count381
+\c@FV@TrueTabCounter=\count382
+\FV@TabBox@Group=\box81
+\FV@TmpLength=\skip73
+\c@FV@HighlightLinesStart=\count383
+\c@FV@HighlightLinesStop=\count384
+\FV@LoopCount=\count385
+\FV@NCharsBox=\box82
+\FV@BreakIndent=\dimen310
+\FV@BreakIndentNChars=\count386
+\FV@BreakSymbolSepLeft=\dimen311
+\FV@BreakSymbolSepLeftNChars=\count387
+\FV@BreakSymbolSepRight=\dimen312
+\FV@BreakSymbolSepRightNChars=\count388
+\FV@BreakSymbolIndentLeft=\dimen313
+\FV@BreakSymbolIndentLeftNChars=\count389
+\FV@BreakSymbolIndentRight=\dimen314
+\FV@BreakSymbolIndentRightNChars=\count390
+\c@FancyVerbLineBreakLast=\count391
+\FV@LineBox=\box83
+\FV@LineIndentBox=\box84
+\FV@LineWidth=\dimen315
+) (c:/texlive/2022/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks53
+\pgfopts@list@add@b@toks=\toks54
+) (c:/texlive/2022/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
+Package newfloat Info: Unsupported document class, or \@chapter 
+(newfloat)             was already redefined by another package.
+Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAuto {\Hy@chapapp *}\Hy@raisedlink {\hyper@anchorstart {\@currentHref }\hyper@anchorend }}\ifnum \c@secnumdepth >\m@ne \ltx@IfUndefined {if@mainmatter}\iftrue {\csname if@mainmatter\endcsname }\let \Hy@next \relax \fi \fi \Hy@next \Hy@org@chapter .
+Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@chapter [{#1}]{#2}.
+) (c:/texlive/2022/texmf-dist/tex/latex/currfile/currfile.sty
+Package: currfile 2022/10/10 v0.8 Provides the file path elements of the current input file
+ (c:/texlive/2022/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2022/10/25 v0.8b Hooks for input files
+ (c:/texlive/2022/texmf-dist/tex/latex/filehook/filehook-2020.sty
+Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
+))
+\c@currfiledepth=\count392
+)
+\pytx@codefile=\write7
+\openout7 = `main.pytxcode'.
+
+\c@pytx@FancyVerbLineTemp=\count393
+\c@pytx@py@default@default=\count394
+\c@pytx@pycon@default@default=\count395
+\c@pytx@sympy@default@default=\count396
+\c@pytx@sympycon@default@default=\count397
+\c@pytx@pylab@default@default=\count398
+\c@pytx@pylabcon@default@default=\count399
+) (c:/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\tikzscale@accuracy=\skip74
  (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count371
-\scratchdimen=\dimen305
-\scratchbox=\box79
-\nofMPsegments=\count372
-\nofMParguments=\count373
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count374
-\MPscratchDim=\dimen306
-\MPnumerator=\count375
-\makeMPintoPDFobject=\count376
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count400
+\scratchdimen=\dimen316
+\scratchbox=\box85
+\nofMPsegments=\count401
+\nofMParguments=\count402
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count403
+\MPscratchDim=\dimen317
+\MPnumerator=\count404
+\makeMPintoPDFobject=\count405
+\everyMPtoPDFconversion=\toks56
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 6.
+Package hyperref Info: Link coloring OFF on input line 9.
  (./main.out) (./main.out)
-\@outlinefile=\write6
-\openout6 = `main.out'.
+\@outlinefile=\write8
+\openout8 = `main.out'.
 
-LaTeX Info: Redefining \celsius on input line 6.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 6.
+\symgns@font=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 9.
+Package gensymb Info: Math companion symbols declared on input line 9.
+LaTeX Info: Redefining \degree on input line 9.
+LaTeX Info: Redefining \celsius on input line 9.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 9.
+LaTeX Info: Redefining \ohm on input line 9.
+Package gensymb Info: Using \textohm for \ohm on input line 9.
+Package gensymb Info: Using \textmu for \micro on input line 9.
+\c@lstlisting=\count406
+Package newfloat Info: Trying Plan B...
 
-
-Package gensymb Warning: Not defining \perthousand.
-
-LaTeX Info: Redefining \ohm on input line 6.
-Package gensymb Info: Using \Omega for \ohm on input line 6.
-
-Package gensymb Warning: Not defining \micro.
-
-\c@lstlisting=\count377
+No file pythontex-files-main/main.pytxmcr.
+Run PythonTeX to create it.
+Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 9.
+\c@listing=\count407
+\newfloat@ftype=\count408
+Package newfloat Info: float type `listing'=8 on input line 9.
+\c@lopytxdepth=\count409
 \openout2 = `sheet1.aux'.
 
 (./sheet1.tex
@@ -842,35 +937,35 @@ Overfull \hbox (4.88666pt too wide) in paragraph at lines 85--87
 \openout2 = `sheet1_sol.aux'.
 
  (./sheet1_sol.tex
-Overfull \hbox (9.18974pt too wide) in paragraph at lines 62--64
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.61     \end{itemize}
+                       [1
+
+
+
+]
+Overfull \hbox (9.18974pt too wide) in paragraph at lines 65--67
 []\T1/cmr/bx/n/10 Solution 2. []\T1/cmr/m/it/10 Claim: \T1/cmr/m/n/10 Every finite-dim VS with a scalar product has an orthonormal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.71       \item \textit
-                        {Eigenvectors:} $(M-\lambda I)x = 0 \\ [1
-
-
-
-])
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.9 \include{sheet1_sol}
-                         [2]
+l.12 \include{sheet1_sol}
+                          [2]
 \openout2 = `sheet2.aux'.
 
  (./sheet2.tex
@@ -902,7 +997,7 @@ l.30   \begin{Problem}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 \include{sheet2}
+l.13 \include{sheet2}
                       [1
 
 
@@ -914,33 +1009,33 @@ l.10 \include{sheet2}
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10   \begin{Solution}
+l.11   \begin{Solution}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28   \begin{Solution}
+l.29   \begin{Solution}
                        
-Underfull \hbox (badness 10000) in paragraph at lines 54--66
-
- []
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67   \end{Solution}
+l.55     \end{align*}
                       [1
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 55--67
+
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69   \begin{Solution}
+l.70   \begin{Solution}
                        
-Underfull \hbox (badness 10000) in paragraph at lines 76--85
+Underfull \hbox (badness 10000) in paragraph at lines 77--86
 
  []
 
@@ -948,18 +1043,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--85
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87   \begin{Solution}
+l.88   \begin{Solution}
                         \phantom{A}\\
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-)
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.11 \include{sheet2_sol}
-                          [2]
+l.110     \end{enumerate}
+                          [2]) [3]
 \openout2 = `sheet3.aux'.
 
  (./sheet3.tex
@@ -1000,7 +1095,7 @@ l.81       \begin{todo}
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 \include{sheet3}
+l.15 \include{sheet3}
                       [2]
 \openout2 = `sheet3_sol.aux'.
 
@@ -1008,32 +1103,63 @@ l.12 \include{sheet3}
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8   \begin{Solution}
-                      
+l.10   \begin{Solution}
+                        $A \in \C^{n\x n}$ hermitian, $ \ Q: \C^m \to \C^n \...
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--28
+
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.11   \begin{Solution}
+l.30   \begin{Solution}
                        
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.14   \begin{Solution}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.17   \begin{Solution}
-                       [Programming])
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+
+ []
+
+\c@pytx@py@default@default@line=\count410
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--76
+
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 \include{sheet3_sol}
-                          [1
+l.76   \end{Solution}
+                      [1
 
 
 
 ]
+pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78   \begin{Solution}
+                        Find shift parameters for $A= \begin{pmatrix}
+pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90   \begin{Solution}
+                       [Programming])
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \include{sheet3_sol}
+                          [2]
 \openout2 = `sheet4.aux'.
 
  (./sheet4.tex
@@ -1060,7 +1186,7 @@ l.31   \begin{Problem}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14 \include{sheet4}
+l.17 \include{sheet4}
                       [1
 
 
@@ -1072,29 +1198,29 @@ l.14 \include{sheet4}
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8   \begin{Solution}
+l.9   \begin{Solution}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.11   \begin{Solution}
+l.13   \begin{Solution}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14   \begin{Solution}
+l.16   \begin{Solution}
                        
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17   \begin{Solution}
+l.19   \begin{Solution}
                        
-Overfull \hbox (10.21881pt too wide) in paragraph at lines 24--26
+Overfull \hbox (10.21881pt too wide) in paragraph at lines 26--28
 \T1/cmr/m/n/10 https://math.stackexchange.com/questions/3875168/eigenvalues-of-a-tridiagonal-
  []
 
 
-Overfull \hbox (45.57129pt too wide) in paragraph at lines 27--28
+Overfull \hbox (45.57129pt too wide) in paragraph at lines 29--30
 []\T1/cmr/m/n/10 https://math.stackexchange.com/questions/177957/eigenvalues-of-tridiagonal-symmetric-
  []
 
@@ -1102,7 +1228,7 @@ Overfull \hbox (45.57129pt too wide) in paragraph at lines 27--28
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 \include{sheet4_sol}
+l.18 \include{sheet4_sol}
                           [1
 
 
@@ -1134,7 +1260,7 @@ l.40   \begin{Problem}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 \include{sheet5}
+l.19 \include{sheet5}
                       [1
 
 
@@ -1146,24 +1272,24 @@ l.16 \include{sheet5}
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8   \begin{Solution}
+l.9   \begin{Solution}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27   \begin{Solution}
+l.28   \begin{Solution}
                        
-Underfull \hbox (badness 10000) in paragraph at lines 28--44
+Underfull \hbox (badness 10000) in paragraph at lines 29--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--44
+Underfull \hbox (badness 10000) in paragraph at lines 29--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--44
+Underfull \hbox (badness 10000) in paragraph at lines 29--45
 
  []
 
@@ -1171,18 +1297,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--44
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46   \begin{Solution}
+l.47   \begin{Solution}
                         (a) \Claim $M := (H_0 - \sigma_1 \I)(H_0 - \sigma_2 ...
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.62     \end{align*}
-                      [1
+l.49     \Proof \begin{align}
+                              [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
 
@@ -1190,29 +1316,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--67
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79   \begin{Solution}
+l.80   \begin{Solution}
                        [Programming])
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 \include{sheet5_sol}
+l.20 \include{sheet5_sol}
                           [2] (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33516 strings out of 474971
- 649268 string characters out of 5780120
- 991428 words of memory out of 5000000
- 54339 multiletter control sequences out of 15000+600000
- 480010 words of font info for 55 fonts, out of 8000000 for 9000
+ 36010 strings out of 474971
+ 702630 string characters out of 5780120
+ 1069305 words of memory out of 5000000
+ 56778 multiletter control sequences out of 15000+600000
+ 480688 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 144i,15n,146p,592b,767s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (15 pages, 277624 bytes).
+ 144i,15n,146p,614b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on main.pdf (17 pages, 299899 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 240 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

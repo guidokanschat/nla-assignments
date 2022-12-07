@@ -3,13 +3,16 @@
 % Solutions to Sheet 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 \newcommand{\Claim}{\textit{Claim: }}
 \newcommand{\Proof}{\textit{Proof: }}
 \newcommand{\svector}[2]{$\bigl( \begin{smallmatrix} #1 \\ #2 \end{smallmatrix} \bigr)$}
 \newcommand{\smatrix}[4]{$\bigl( \begin{smallmatrix} #1&#2 \\ #3&#4 \end{smallmatrix} \bigr)$}
 \newcommand{\I}{\mathbb{I}}
+\newcommand{\x}{\times}
 
 \begin{SolutionSheet}[\ref{sheet1}]
+\begin{onehalfspace}
 
   \begin{Solution}
     \begin{itemize}
@@ -64,7 +67,7 @@
   \end{Solution}
 
   \begin{Solution}
-    Let $M=$ \smatrix{c}{s}{-s}{c}$ \in \mathbb{R}^{2\times 2} \quad$ with $c = cos(\alpha), \ s = sin(\alpha), \ \alpha \in \mathbb{R}$ \\
+    Let $M=$ \smatrix{c}{s}{-s}{c}$ \in \mathbb{R}^{2\x 2} \quad$ with $c = cos(\alpha), \ s = sin(\alpha), \ \alpha \in \mathbb{R}$ \\
     \begin{itemize}
       \item \textit{Eigenvalues:} $0 = det(M-\lambda \I) = \lambda^2 - 2c\lambda + 1 \\
         \implies \lambda_{1,2} \ = \ c \pm is \ = \ e^{\pm i\alpha}$ \\
@@ -81,6 +84,7 @@
   \begin{Solution}[Programming]
   \end{Solution}
 
+\end{onehalfspace}
 \end{SolutionSheet}
 
 
