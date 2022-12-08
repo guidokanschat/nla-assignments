@@ -1,5 +1,5 @@
 // Compile with C++17:
-// g++ -std=c++17 -o gauss-seidel gauss-seidel.cc
+// g++ -std=c++17 -o steepest-decent steepest-decent.cc
 
 #include "laplace.h"
 
@@ -17,6 +17,7 @@ int main()
   const std::vector<double> b(n_dofs, 1.);
   std::vector<double> x(n_dofs, 0.);
 
+  const unsigned int tol = 1.e-14;
   const unsigned int n_steps = 50;
-  gauss_seidel(A, b, x, n_steps);
+  steepest_decent(A, b, x, tol, n_steps);
 }
