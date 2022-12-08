@@ -6,13 +6,17 @@
 int main()
 {
   const unsigned int d = 2;
-  const unsigned int n = 100;
-  const unsigned int n_dofs = (d==1) ? n : (d==2) ? n*n : 0;
+  const unsigned int n = 20;
 
-  if (n_dofs==0) assert(false);
+  if (n==0) assert(false);
 
-  Laplace<d> A(n_dofs);
-  if (n_dofs<8) A.print();
+  Laplace<d> A(n);
+  if (n<8){
+    A.print();
+    A.print_sparsity();
+  }
+
+  const unsigned int n_dofs = A.size();
 
   const std::vector<double> b(n_dofs, 1.);
   std::vector<double> x(n_dofs, 0.);
