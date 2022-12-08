@@ -17,6 +17,9 @@
     is also symmetric. Moreover, the eigenvectors of $\mata$ and
     $p(\mata)$ are identical, while the eigenvalues of $p(\mata)$ are
     equal to $p(\lambda_j)$ for $1\leq j\leq n$.
+    \begin{todo}
+      Definition missing: scalar $a_j\in\R$
+    \end{todo}
   \end{Problem}
 
   \begin{Problem}[Eigenvalues and eigenvectors of a tensor product
@@ -111,8 +114,9 @@
     \end{gather*}
     with the Gauss-Seidel iteration, where the system matrix
     $\mata=\matl_2\in\R^{n^2\times n^2}$ is defined in
-    \cref{sheet7:problem3}, by observing the following steps. Try to
-    avoid explicitly forming the system matrix.
+    \cref{sheet7:problem3}, and the right hand side is given by the
+    constant vector $\vb=(1,...,1)^T$, by observing the following
+    steps. Try to avoid explicitly forming the system matrix.
     \begin{enumerate}[(a)]
     \item\label{sheet7:problem4:parta} Implement a function
       \lstinline{vmult} that performs the matrix-vector product
@@ -136,6 +140,10 @@
         build the system matrix, because of the possibly high memory
         usage.}
     \end{enumerate}
+
+    \begin{todo}
+      b has not been defined: $\vb=(1,...,1)^T$
+    \end{todo}
   \end{Problem}
 
 \end{Sheet}
