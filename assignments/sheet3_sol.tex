@@ -30,31 +30,13 @@
   \begin{Solution}
     $A$ diagonizable, real \\
     $\sigma(A) = \{-2, \ 1-2i, \ 1+2i, \ 1, \ -i, \ i, \ 2\}$ \\
-    \\
     The power method converges to $\lambda\in \sigma(A)$ such that \begin{equation*}
       |\lambda - \sigma| = max
     \end{equation*} 
     $\implies $ does not converge for \begin{equation*}
       max = |\lambda_i -\sigma| = |\lambda_j - \sigma| \qquad (\lambda_i \neq \lambda_j)
     \end{equation*} 
-    \begin{pycode}
-      import numpy as np
-      import matplotlib.pyplot as plt
-
-      x=np.array([[1,0],[2,0],[-2,0],[0,1],[0,-1],[1,2],[1,-2]])
-
-      from scipy.spatial import Voronoi, voronoi_plot_2d
-      vor = Voronoi(x)
-
-      fig = voronoi_plot_2d(vor)
-      plt.grid()
-      plt.show()
-    \end{pycode}
-    % insert picture
-    %\input{eval_figure.pgf}
-    %$\py{result}$
-    \\
-    \\
+    \includegraphics[width=7cm]{include/sheet3_ex2.png}\\
     (b) Wikipedia: \begin{equation*}
       \text{error} = \mathcal{O}\big(\frac{|\mu -\lambda_1|}{|\mu -\lambda_2|}\big) 
     \end{equation*}
