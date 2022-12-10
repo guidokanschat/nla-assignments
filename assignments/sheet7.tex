@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 7
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until December 9, 2022, 2pm.]
+  \label{sheet7}
+
+  \begin{Problem}
+    Let $\mata$ be a real symmetric matrix with eigenvalues
+    $\lambda_j$, $1\leq j\leq n$. Show that for any polynomial
+    $p(t) = \sum_{j=0}^k a_jt^j$
+    the matrix
+    \begin{gather*}
+      p(\mata) = \sum_{j=0}^k a_j\mata^j
+    \end{gather*}
+    is also symmetric. Moreover, the eigenvectors of $\mata$ and
+    $p(\mata)$ are identical, while the eigenvalues of $p(\mata)$ are
+    equal to $p(\lambda_j)$ for $1\leq j\leq n$.
+    \begin{todo}
+      Definition missing: scalar $a_j\in\R$
+    \end{todo}
+  \end{Problem}
+
+  \begin{Problem}[Eigenvalues and eigenvectors of a tensor product
+      operator]
+     \label{sheet7:problem2}
+
+    For vectors $\vu\in\R^n$ and $\vv\in\R^m$ we define the tensor
+    product as a (block) vector
+    \begin{gather*}
+      \vu\otimes\vv =
+      \begin{pmatrix}
+        u_1v& u_2v& \cdots & u_nv
+      \end{pmatrix}^T \in\R^{nm}.
+    \end{gather*}
+    Let $\mata$ and $\matb$ be matrices in $\R^{n\times n}$ and
+    $\R^{m\times m}$ respectively. We define their tensor product
+    $\mata\otimes\matb\in\R^{nm\times nm}$ as
+    \begin{gather*}
+      \mata\otimes\matb =
+      \begin{pmatrix}
+        a_{11}\matb & \cdots & a_{1n}\matb \\
+        \vdots & \ddots & \vdots \\
+        a_{n1}\matb & \cdots & a_{nn}\matb
+      \end{pmatrix}.
+    \end{gather*}
+    \begin{enumerate}[(a)]
+    \item Show that
+      $(\mata\otimes\matb)(\vu\otimes\vv) =
+      (\mata\vu)\otimes(\matb\vv)$.
+    \item Prove that the eigenvectors of the tensor product are the
+      pairwise tensor products of the eigenvectos of the individual
+      matrices. What are the corresponding eigenvalues?
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}
+    \label{sheet7:problem3}
+    Let $\matl_d$ be the discretization of the $d$-dimensional Laplace
+    operator on the unit square by the five-point stencel with a
+    uniform Dirichlet boundary condition to the mesh size
+    $h=\frac1{n+1}$.  In 1D it is given in terms of the matrix
+    $\matt_2$ defined in \cref{sheet6:problem2} of \cref{sheet6} by
+    \begin{gather*}
+      \matl_1 = \frac1{h^2}\matt_2 \in\R^{n\times n}.
+    \end{gather*}
+    In 2D it is given by
+    \begin{gather*}
+      \matl_2 = \frac1{h^2}
+      \begin{pmatrix}
+        \matd &   -\id & & & \\
+         -\id &  \matd & -\id   & & \\
+              & \ddots & \ddots & \ddots & \\
+              &        &   -\id &  \matd &   -\id\\
+              &        &        &   -\id &  \matd
+      \end{pmatrix}
+      \in\R^{n^2\times n^2},
+    \end{gather*}
+    where $\id\in\R^{n\times n}$ and $\matd\in\R^{n\times n}$ are
+    defined as
+    \begin{gather*}
+      \id =
+      \begin{pmatrix}
+        1 & & \\
+          & \ddots & \\
+          &        & 1
+      \end{pmatrix}
+      \quad\text{and}\quad
+      \matd =
+      \begin{pmatrix}
+         4 & -1 &    && \\
+        -1 &  4 & -1 && \\
+           & \ddots & \ddots & \ddots & \\
+           &    & -1 & 4 & -1 \\
+           &    &    & -1 & 4
+      \end{pmatrix}.
+    \end{gather*}
+    \begin{enumerate}[(a)]
+    \item Use the results of \cref{sheet7:problem2} to show that
+      $\matl_2$ could be expressed as
+      \begin{gather*}
+        \matl_2 = (\matl_1\otimes\id) + (\id\otimes \matl_1).
+      \end{gather*}
+    \item List the four smallest eigenvalues of $\matl_2$. What is
+      their multiplicity?
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}[Programming]
+    \label{sheet7:problem4}
+    Write a program that solves the 2D Laplace problem
+    \begin{gather*}
+      \mata\vx=\vb,
+    \end{gather*}
+    with the Gauss-Seidel iteration, where the system matrix
+    $\mata=\matl_2\in\R^{n^2\times n^2}$ is defined in
+    \cref{sheet7:problem3}, and the right hand side is given by the
+    constant vector $\vb=(1,...,1)^T$, by observing the following
+    steps. Try to avoid explicitly forming the system matrix.
+    \begin{enumerate}[(a)]
+    \item\label{sheet7:problem4:parta} Implement a function
+      \lstinline{vmult} that performs the matrix-vector product
+      $\mata\cdot\vv$ of $\mata$ with a given vector $\vv$, and
+      returns a vector $\vw$.
+    \item Write a function \lstinline{gauss_seidel_step} that
+      implements a single step of the Gauss-Seidel iteration. As in
+      \eqref{sheet7:problem4:parta} this function should take a vector
+      $\vv$ and return the resulting vector $\vw$.
+    \item Use the null-vector $\vx^{(0)} = (0,...,0)^T$ as initial
+      guess and test your program with $n=20$ and $n=100$. Observe the
+      evolution of the residual in the 2-norm
+      \begin{gather*}
+        r^{(k)} = \norm{\mata\cdot\vx^{(k)}-\vb}_2
+      \end{gather*}
+      for 50 steps of the Gauss-Seidel iteration.  Plot the obtained
+      result vector after 1, 5, 15, 30, and 50 iterations.
+
+      \textit{Note: Be careful not to crash your computer when
+        starting your program with $n=100$ or more, if you explicitly
+        build the system matrix, because of the possibly high memory
+        usage.}
+    \end{enumerate}
+
+    \begin{todo}
+      b has not been defined: $\vb=(1,...,1)^T$
+    \end{todo}
+  \end{Problem}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until December 16, 2022, 2pm.]
+  \label{sheet8}
+
+  \begin{Problem}
+    \hfill\\\vspace{-6ex}
+    \begin{enumerate}[(a)]
+    \item Estimate the sparsity pattern, that is, the possible
+      positions of nonzero entries, of the LU decomposition for the
+      5-diagonal sparse matrix
+      \begin{gather*}
+        \begin{pmatrix}
+          2 & 0 &-1 &   &   & & \\
+          0 & 2 & 0 &-1 &   & & \\
+          -1 & 0 & 2 & 0 &-1 & & \\
+            & \ddots & \ddots & \ddots & \ddots & \ddots  & \\
+            & &-1 & 0 & 2 & 0 &-1 \\
+            & &   &-1 & 0 & 2 & 0 \\
+            & &   &   &-1 & 0 & 2
+        \end{pmatrix}.
+      \end{gather*}
+    \item Make an educated guess how this sparsity pattern will change
+      if the nonzero off-diagonal entries are further away from the
+      diagonal.
+    \item Will the inverse have similar sparsity? To this end,
+      consider how information flows between far away vector entries
+      using $A^{-1} = LU$.
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}[{\cite[P-5.1 b]{Saad00}}]
+    Let $\mata\vx = \vb$ be a linear system with a symmetric, positive
+    definite matrix $\mata\in\R^{n\times n}$ that has extremal
+    eigenvalues $\lambda_{\min}$ and $\lambda_{\max}$ and spectral
+    condition number $\cond(\mata)$. Consider the sequence
+    $\set{\vx^{(k)}}$ of one-dimensional projection processes with
+    $K = L = \spann{\ve_i}$, where $\ve_i$ denotes the $i$-th unit
+    vector in $\R^n$. Assume that $i$ is selected at each step $k$ to
+    be the index of a component of largest absolute value in the
+    current residual vector $\vr^{(k)} = \vb - \mata\vx^{(k)}$.
+    \begin{enumerate}[(a)]
+    \item\label{sheet8:problem2:part-a} For
+      $\vd^{(k)} = \mata^{-1}\vb - \vx^{(k)}$ show that
+      \begin{gather*}
+        \norm{\vd^{(k+1)}}_\mata
+        \leq
+        \left(1-\frac1{n\cond(\mata)}\right)^{\frac12}
+        \norm{\vd^{(k)}}_\mata.
+      \end{gather*}
+      \textit{Hint: You can use the expression
+        \begin{gather*}
+          \scal(\mata\vd^{(k+1)},\vd^{(k+1)})
+          =\scal(\mata\vd^{(k)},\vd^{(k)})
+          -\frac{\scal(\vr^{(k)},\ve_i)^2}{a_{ii}},
+        \end{gather*}
+        as well as the inequality
+        $\abs{\ve_i^T \vr^{(k)}} \geq
+        n^{-\nfrac12}\norm{\vr^{(k)}}_2$.}
+    \item Does \eqref{sheet8:problem2:part-a} prove that the algorithm
+      converges?
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}[{\cite[P-5.6]{Saad00}}]
+    Consider the linear system $\mata\vx = \vb$, where $\mata$ is a
+    symmetric positive definite matrix. We define a projection method
+    which uses a two-dimensional space at each step. At a given step,
+    take $L = K = \spann{\vr, \mata\vr}$, where $\vr = \vb - \mata\vx$
+    is the current residual.
+    \begin{enumerate}[(a)]
+    \item For a basis of $K$ use the vector $\vr$ and the vector $\vp$
+      obtained by orthogonalizing $\mata\vr$ against $\vr$ with
+      respect to the $\mata$-inner product. Give the formula for
+      computing $\vp$ (no need to normalize the resulting vector).
+    \item Write the algorithm for performing the projection method
+      described above.
+    \item Will the algorithm converge for any initial guess $\vx_0$?
+      Justify the answer. \textit{Hint: Exploit the convergence
+        results for one-dimensional projection techniques.}
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}[Programming]
+    \hfill\\\vspace{-6ex}
+    \begin{enumerate}[(a)]
+    \item Implement the steepest decent method (Algorithm 2.3.15 in the
+      lecture notes).
+    \item Use your implementation of the steepest decent method to
+      solve the 2D Laplace problem
+      \begin{gather*}
+        \matl_2\vx=\vb
+      \end{gather*}
+      as in \cref{sheet7:problem4} on \cref{sheet7} with right hand
+      side vector $\vb=(1,...,1)^T$ and initial guess
+      $\vx^{(0)}=(0,...,0)^T$ with $n=50$ and $n=100$. Observe the
+      convergence for the first 50 steps. What convergence rate do you
+      expect?
+    \end{enumerate}
+  \end{Problem}
+
+  \vfill
+  \bibliographystyle{alpha}
+  \bibliography{bib}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

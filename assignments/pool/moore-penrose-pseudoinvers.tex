@@ -1,0 +1,26 @@
+\begin{Problem}
+  For $\mata\in\C^{m\times n}$, a pseudoinverse of $\mata$ is
+  defined as the matrix $\mata^+\in\C^{n\times m}$ satisfying all of
+  the following four criteria, known as the Moore-Penrose conditions:
+  \begin{itemize}
+  \item $\mata\mata^+\mata = \mata$
+  \item $\mata^+\mata\mata^+ = \mata^+$
+  \item $\left(\mata\mata^+\right)^* = \mata\mata^+$
+  \item $\left(\mata^+\mata\right)^* = \mata^+\mata$
+  \end{itemize}
+  \begin{enumerate}[(a)]
+  \item Using the SVD of matrix $\mata\in\C^{m\times n}$ propose a
+    formula for $\mata^+$
+    \begin{enumerate}[i.]
+    \item Assume that $\mata$ has full rank.
+    \item Generalize the obtained formula.
+    \item Prove that it satisfies all of the conditions above.
+    \end{enumerate}
+  \item Prove that the pseudoinvers is unique.
+  \item Show that for a non-singular square matrix the conditions
+    above define the invers.
+  \item Prove that computing the pseudoinverse commutes with the
+    transposition, i.e.,
+    $\left(\mata^+\right)^T = \left(\mata^T\right)^+$.
+  \end{enumerate}
+\end{Problem}

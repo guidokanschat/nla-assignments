@@ -1,0 +1,20 @@
+\begin{Problem}
+  The Frobenius norm of real matrix $\mata$, defined as follows:
+  \begin{gather*}
+    \norm{\mata}_F = \sqrt{\sum_{i=1,j=1}^{i\leq m,j\leq n} a_{i,j}^2}
+  \end{gather*}
+  is an extension of the Euclidean norm to $\R^{m\times n}$. It is
+  sometimes useful for numerical linear algebra applications as it
+  is possible to straightforwawrdly compute it. Prove the following
+  statements:
+  \begin{enumerate}[(a)]
+  \item The Frobenius norm is a norm.
+  \item Multiplication by an orthogonal matrix does not change the
+    norm: $\norm{\matq\mata}_F = \norm{\mata}$, where
+    $\matq\in\R^{m\times m}$ is a unitary real matrix.
+  \item
+    $\norm{\mata}_2 \leq \norm{\mata}_F \leq
+    \sqrt{r}\norm{\mata}_2$, where $r$ is the rank of the real
+    matrix $\mata$. \textit{Hint:} use SVD.
+  \end{enumerate}
+\end{Problem}

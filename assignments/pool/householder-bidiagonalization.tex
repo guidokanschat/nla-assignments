@@ -1,0 +1,49 @@
+\begin{Problem}
+  \textit{Householder bidiagonalization} is used as initial step for
+  computing the SVD to reduce a given matrix to an upper-bidiagonal
+  one. Show that the algorithm below yields a factorization
+  $\matu_B^T\mata\matv_B=\matb$, where $\matb$ is upper-bidiagonal and
+  $\matu_B$, $\matv_B$ are orthogonal.
+
+  \begin{Algorithm}[Householder bidiagonalization]
+    \begin{algorithmic}[1]
+      \For{$k=1,...,n$}
+      \State Determine a Householder matrix $\tilde{\matu}_k$ of
+      order $m-k+1$ such that
+      \begin{gather*}
+        \tilde{\matu}_k
+        \begin{pmatrix}
+          a_{k,k}\\ \vdots \\ a_{m,k}
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+          a_{k,k}\\ 0\\ \vdots \\ 0
+        \end{pmatrix}.
+      \end{gather*}
+      \State $\mata\gets
+      \begin{pmatrix}
+        \id_{k-1} & 0\\ 0 & \tilde{\matu}_k
+      \end{pmatrix}
+      \mata$
+      \If{$k<n-1$}
+      \State Determine a Householder matrix $\tilde{\matv}_k$ of order
+      $n-k+1$ such that
+      \begin{gather*}
+        \begin{pmatrix}
+          a_{k,k+1} & \cdots & a_{k,n}
+        \end{pmatrix}
+        \tilde{\matv}_k = 
+        \begin{pmatrix}
+          x & 0 & \cdots & 0
+        \end{pmatrix}.
+      \end{gather*}
+      \State $\mata\gets
+      \begin{pmatrix}
+        \id_{k-1} & 0\\ 0 & \tilde{\matv}_k
+      \end{pmatrix}
+      \mata$
+      \EndIf
+      \EndFor
+    \end{algorithmic}
+  \end{Algorithm}
+\end{Problem}
