@@ -14,13 +14,13 @@
       5-diagonal sparse matrix
       \begin{gather*}
         \begin{pmatrix}
-          2 & 0 &-1 &   &   & & \\
-          0 & 2 & 0 &-1 &   & & \\
+           2 & 0 &-1 &   &   & & \\
+           0 & 2 & 0 &-1 &   & & \\
           -1 & 0 & 2 & 0 &-1 & & \\
-            & \ddots & \ddots & \ddots & \ddots & \ddots  & \\
-            & &-1 & 0 & 2 & 0 &-1 \\
-            & &   &-1 & 0 & 2 & 0 \\
-            & &   &   &-1 & 0 & 2
+             & \ddots & \ddots & \ddots & \ddots & \ddots  & \\
+             & &-1 & 0 & 2 & 0 &-1 \\
+             & &   &-1 & 0 & 2 & 0 \\
+             & &   &   &-1 & 0 & 2
         \end{pmatrix}.
       \end{gather*}
     \item Make an educated guess how this sparsity pattern will change
@@ -29,6 +29,9 @@
     \item Will the inverse have similar sparsity? To this end,
       consider how information flows between far away vector entries
       using $A^{-1} = LU$.
+      \begin{todo}
+        Rewrite as $\mata^{-1} = \matu^{-1}\matl^{-1}$
+      \end{todo}
     \end{enumerate}
   \end{Problem}
 
@@ -60,6 +63,9 @@
         as well as the inequality
         $\abs{\ve_i^T \vr^{(k)}} \geq
         n^{-\nfrac12}\norm{\vr^{(k)}}_2$.}
+      \begin{todo}
+        Definition of $a_{ii}$ is missing
+      \end{todo}
     \item Does \eqref{sheet8:problem2:part-a} prove that the algorithm
       converges?
     \end{enumerate}
