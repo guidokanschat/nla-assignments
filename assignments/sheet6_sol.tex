@@ -4,19 +4,135 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{SolutionSheet}[\ref{sheet6}]
-
+\begin{onehalfspace}
+  
   \begin{Solution}
+    \Claim matrix it $x^{(k+1)} = Mx^{(k)} + g$ converges $\iff \rho(M) < 1$\\
+    \Proof $"\implies":$ A linear iteration converges $\iff \quad M^k \conv{k} 0$ \\
+    $\phantom{\implies}$ Let $\lambda$ be the largest eigenvalue and $v$ a normed corresponding eigenvector. \\
+    $\phantom{\implies} \implies $\begin{equation*}
+      0 \ = \ \lim_{k \to \infty} M^k v \ = \ \lim_{k \to \infty} \lambda^k v \ = \ v \lim_{k \to \infty} \lambda^k
+    \end{equation*}
+    $\phantom{\implies} \implies \lambda^k \conv{k} 0 \\
+    \phantom{\implies} \implies |\lambda| < 1 \\
+    \phantom{\implies} \stackrel{\text{def } \rho(M)}{\implies} \rho(M) < 1$\\
+    \\
+    $"\Longleftarrow": \rho(M) < 1 \\
+    \phantom{\implies} \implies \exists \ \epsilon_0 > 0$, st $\ \rho(M)+\epsilon_0 < 1 \\
+    \phantom{\implies} \stackrel{\text{2.2.12}}{\implies} \exists \ \norm{\cdot}_{M,\epsilon_0} =: \norm{\cdot}$, st \begin{equation*}
+      \norm{M} \leq \rho(M) + \epsilon_0 < 1 
+    \end{equation*}
+    $\phantom{\implies} \implies$\begin{equation*}
+      \norm{M^k} \leq \norm{M}^k \conv{k} 0
+    \end{equation*}
+    $\phantom{\implies} \stackrel{\norm{\cdot} \text{ continuous}}{\implies} M^k \conv{k} 0$
+  \end{Solution}
+
+  \begin{Solution} Varify eigenvalues and eigenvectors of $T_{\alpha}$: \\
+    \begin{align*}
+      T_{\alpha} q_j &=  \begin{pmatrix}
+        \alpha &     -1 &        &        & \\
+            -1 & \alpha &     -1 &        & \\
+              & \ddots & \ddots & \ddots & \\
+              &        &     -1 & \alpha &     -1 \\
+              &        &        &     -1 & \alpha
+      \end{pmatrix} \begin{pmatrix}
+        sin(j\theta) \\ 
+        \\
+        \vdots\\
+        \\
+        sin(nj\theta)
+      \end{pmatrix} \\
+      &= \begin{pmatrix}
+        \alpha sin(j\theta) - sin(2j \theta) \\
+        -sin(j \theta) + \alpha sin(2j\theta) - sin(3j \theta)\\
+        \vdots \\
+        -sin((n-2)j \theta) + \alpha sin((n-1)j\theta) - sin(n j \theta)\\
+        -sin((n-1)j \theta) + \alpha sin(n j \theta)\\
+      \end{pmatrix} \\
+      &= \begin{pmatrix}
+        \alpha sin(j\theta) - sin(j\theta - j\theta) - sin(j\theta + j\theta) \\
+        \\
+        \vdots \\
+        \\
+        \alpha sin(nj\theta) - sin(nj\theta - j\theta) - sin(nj\theta + j\theta)
+      \end{pmatrix} \\
+      &= \begin{pmatrix}
+        \alpha sin(j\theta) - 2 cos(j\theta)sin(j \theta) \\
+        \\
+        \vdots \\
+        \\
+        \alpha sin(nj \theta) - 2 cos(j\theta) sin(nj\theta)
+      \end{pmatrix} = \lambda_j q_j 
+    \end{align*}
   \end{Solution}
 
   \begin{Solution}
+    \textbf{(a)} \Claim The Richardson iteration \begin{equation*}
+      x_{k+1} = (\I -\omega A)x_k + \omega b \quad (\omega \in \R)
+    \end{equation*} converges to $A^{-1}b \quad \iff \quad 0 \ < \ \omega \ < \ \frac{2}{\lambda_{max}(A)}$ \\
+    \Proof Define $A' := \I - \omega A$ \\
+    \begin{align*}
+      \text{Iteration converges} &\stackrel{\text{ex} 1}{\iff} \rho(\I -\omega A) \ < \ 1 \\
+      &\iff |\lambda_{max}(A') \ < \ 1 \\
+    &\iff -1 \ < \ \lambda_i(A') \ < \ 1 \quad \forall i
+    \end{align*}
+    Let $\lambda $ be an eigenvalue of $A$ and $v$ a corresponding eigenvector \\
+    $\implies$ \begin{equation*}
+      A' v \ = \ (\I - \omega A)v \ = \ v - \omega Av \ = \ v - \omega\lambda v \ = \ (1- \omega\lambda)v
+    \end{equation*}
+    $\implies v$ is an eigenvector of $A'$ with corresponding eigenvalue $(1-\omega\lambda)$\\
+    So \begin{align*}
+      & -1 \ <  \ \lambda_i(A') \ < \ 1 \\
+      \iff & -1 \ < \ \lambda_{min}(A') \ \leq \ \lambda_i(A')  \ \leq \ \lambda_{max}(A') \ < \ 1 \\
+      \iff & -1 \ < \ 1-\omega\lambda_{max}(A) \ \leq \ 1-\omega\lambda_{i}(A) \ \leq \ 1-\omega\lambda_{min}(A) \ < \ 1 \\
+      \iff & -2 \ < \ - \omega\lambda_{max}(A) \ \leq \ - \omega\lambda_{i}(A) \ \leq \- \omega\lambda_{min}(A) \ < \ 0 \\
+      \stackrel{A \text{ pos def}}{\iff} & \frac{2}{\lambda_{max}(A)} \ > \ \omega \ > \ 0
+    \end{align*}
+    If the iteration converges: \begin{align*}
+      & x* = x* - \omega(Ax*-b) \\
+      \iff & Ax* = b \\
+      \iff & x* = A^{-1}b
+    \end{align*}
+    \textbf{(b) (i)} \Claim $\omega_{opt} = \frac{2}{\_{max}+\lambda_{min}}$ \\
+    \Proof \begin{align*}
+      \omega_{opt} &= \text{arg min}_{\omega} \ \rho(\I-\omega A) \\
+      &= \text{arg min}_{\omega} \max_i |1-\omega\lambda_i| \\
+      &= \text{arg min}_{\omega} \max{|1-\omega\lambda_n|, \ |1-\omega\lambda_1|}
+    \end{align*}
+    $\implies \omega_{opt}$ is solution of: \begin{align*}
+      |1-\omega\lambda_n| = |1-\omega\lambda_1| & \iff (1-\omega\lambda_n)^2 = (1-\omega\lambda_1)^2 \\
+      &\iff 1 - 2\omega\lambda_n + \omega^2 \lambda_n^2 = 1 - 2\omega\lambda_1 + \omega^2 \lambda_1^2 \\
+      &\iff (\lambda_n^2 - \lambda_1^2) \omega^2 - 2 \omega(\lambda_n - \lambda_1) = 0 \\
+    &\iff \omega=0 \quad \text{or} \quad \omega = \frac{2(\lambda_n - \lambda_1)}{\lambda_n^2 - \lambda_1^2} = \frac{2}{\lambda_n + \lambda_1}
+    \end{align*}
+    \textbf{(ii)} \Claim $\norm{\I - \omega_{opt}A}_2 = \frac{\lambda_{max} - \lambda_{min}}{\lambda_{max} + \lambda_{min}} = \frac{cond_2(A)-1}{cond_2(A)+1}$ \\
+    where $\cond_2(A) = \frac{\lambda_{max}}{\lambda_{min}}$ \\
+    \Proof \begin{align*}
+      \norm{\I - \omega_{opt}A}_2 &= \rho(\I - \omega_{opt}A) \\
+      &= \max_i |1-\omega_{opt}\lambda_i| \\
+      &\stackrel{(i)}{=} \max_i |1-\frac{2\lambda_i}{\lambda_n + \lambda_1}| \\
+      &= \max_i |\frac{\lambda_n + \lambda_1 - 2\lambda_i}{\lambda_n + \lambda_1}| \\
+      &= |\frac{\lambda_n - \lambda_1}{\lambda_n + \lambda_1}| \\
+      &= \frac{\lambda_n - \lambda_1}{\lambda_n + \lambda_1} \\
+      &= \frac{\frac{\lambda_n}{\lambda_1} - 1}{\frac{\lambda_n}{\lambda_1} + 1} \\
+      &= \frac{cond_2(A)-1}{cond_2(A)+1}
+    \end{align*}
   \end{Solution}
 
-  \begin{Solution}
+  \begin{Solution} $T_2 = \begin{pmatrix}
+    -2 & -1 & & \\
+    -1 & \ddots & \ddots & \\
+    & \ddots && -1 \\
+    && -1 & -2
+  \end{pmatrix} $\\
+  \textbf{(a)} for which $\omega$ does the Richardson iteration converge? \\
+  ex 3: convergence $\iff \quad 0 \ < \ \omega \ < \ \frac{2}{\lambda_{max}}$ \\
+  ex 2: $\lambda_j = 2-2\cos(j\nu) \implies \quad 0 \ \leq \ \lambda_j \ \leq \ 4$ \\
+  $\implies$ will converge for $0 \ \leq \ \omega \ \leq \ \frac{2}{4} = \frac{1}{2}$ 
   \end{Solution}
 
-  \begin{Solution}
-  \end{Solution}
-
+\end{onehalfspace}
 \end{SolutionSheet}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.18)  10 DEC 2022 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.18)  8 JAN 2023 14:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -744,6 +744,9 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \c@sheet=\count367
 \c@classproblem=\count368
 \c@Solution=\count369
+ (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 \c@classalgorithm=\count370
 ) (c:/texlive/2022/texmf-dist/tex/latex/pythontex/pythontex.sty
 Package: pythontex 2021/06/06 v0.18 execute and typeset Python code and other languages
@@ -834,7 +837,9 @@ Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 \tikzscale@accuracy=\skip74
- (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux))
+ (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux) (./sheet6.aux) (./sheet6_sol.aux) (./sheet7.aux) (./sheet7_sol.aux) (./sheet8.aux) (./sheet8_sol.aux) (./sheet9.aux)
+No file sheet9_sol.aux.
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -899,456 +904,60 @@ Package newfloat Info: New float `listing' with options `fileext=lopytx' on inpu
 \newfloat@ftype=\count408
 Package newfloat Info: float type `listing'=8 on input line 10.
 \c@lopytxdepth=\count409
-\openout2 = `sheet1.aux'.
+\openout2 = `sheet9.aux'.
 
-(./sheet1.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+(./sheet9.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22.
  (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 18.
- (c:/texlive/2022/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-Overfull \hbox (4.98555pt too wide) in paragraph at lines 36--42
-\OML/cmm/m/it/10 P[]$ \T1/cmr/m/n/10 of any vector $\OT1/cmr/bx/n/10 v \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 V$ \T1/cmr/m/n/10 onto $\OML/cmm/m/it/10 W$ \T1/cmr/m/n/10 have the following expressions, respectively: 
- []
-
-
-Overfull \hbox (2.53416pt too wide) in paragraph at lines 65--67
-[]\T1/cmr/bx/n/10 Problem 2. []\T1/cmr/m/n/10 Proof that every finite-dimensional vector space with scalar product
- []
-
-[1
-
-
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (4.88666pt too wide) in paragraph at lines 85--87
-[]\T1/cmr/m/n/10 Generates an orthonormal basis from a given set of $\OML/cmm/m/it/10 n$ $n$\T1/cmr/m/n/10 -dimensional complex
- []
-
-) [2]
-\openout2 = `sheet1_sol.aux'.
-
- (./sheet1_sol.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.61     \end{itemize}
-                       [1
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 22.
+ (c:/texlive/2022/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)) [1
 
 
 
-]
-Overfull \hbox (9.18974pt too wide) in paragraph at lines 65--67
-[]\T1/cmr/bx/n/10 Solution 2. []\T1/cmr/m/it/10 Claim: \T1/cmr/m/n/10 Every finite-dim VS with a scalar product has an orthonormal
- []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
- []
 
+
+
+
+
+
+
+
+
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux) (./sheet6.aux) (./sheet6_sol.aux) (./sheet7.aux) (./sheet7_sol.aux) (./sheet8.aux) (./sheet8_sol.aux) (./sheet9.aux)
+No file sheet9_sol.aux.
 )
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.13 \include{sheet1_sol}
-                          [2]
-\openout2 = `sheet2.aux'.
-
- (./sheet2.tex
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9   \begin{Problem}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.19   \begin{Problem}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.24   \begin{Problem}
-                      
-Overfull \hbox (6.19994pt too wide) in paragraph at lines 25--28
-[]\T1/cmr/bx/n/10 Problem 3. []\T1/cmr/m/n/10 Construct a counterexample that the problem of finding eigenvectors
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30   \begin{Problem}
-                      )
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.14 \include{sheet2}
-                      [1
-
-
-
-]
-\openout2 = `sheet2_sol.aux'.
-
- (./sheet2_sol.tex
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.11   \begin{Solution}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.29   \begin{Solution}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.55     \end{align*}
-                      [1
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 55--67
-
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.70   \begin{Solution}
-                       
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
-
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.88   \begin{Solution}
-                        \phantom{A}\\
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.110     \end{enumerate}
-                          [2]) [3]
-\openout2 = `sheet3.aux'.
-
- (./sheet3.tex
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9   \begin{Problem}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.25   \begin{Problem}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42   \begin{Problem}
-                      
-Overfull \hbox (16.24191pt too wide) in paragraph at lines 44--46
-[]\T1/cmr/bx/n/10 Problem 3. []\T1/cmr/m/n/10 Propose shift parameters that will allow you to compute \T1/cmr/m/it/10 all \T1/cmr/m/n/10 eigenvalues
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.58   \begin{Problem}
-                      [Programming]
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.81       \begin{todo}
-                        [1
-
-
-
-])
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.16 \include{sheet3}
-                      [2]
-\openout2 = `sheet3_sol.aux'.
-
- (./sheet3_sol.tex
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.10   \begin{Solution}
-                        $A \in \C^{n\x n}$ hermitian, $ \ Q: \C^m \to \C^n \...
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--28
-
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30   \begin{Solution}
-                       
-<include/sheet3_ex2.png, id=91, 433.62pt x 289.08pt>
-File: include/sheet3_ex2.png Graphic file (type png)
-<use include/sheet3_ex2.png>
-Package pdftex.def Info: include/sheet3_ex2.png  used on input line 39.
-(pdftex.def)             Requested size: 199.16928pt x 132.7799pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42     \end{equation*}
-                         [1
-
-
-
- <./include/sheet3_ex2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 42--58
-
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.60   \begin{Solution}
-                        Find shift parameters for $A= \begin{pmatrix}
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.72   \begin{Solution}
-                       [Programming])
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.17 \include{sheet3_sol}
-                          [2]
-\openout2 = `sheet4.aux'.
-
- (./sheet4.tex
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9   \begin{Problem}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.16   \begin{Problem}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.25   \begin{Problem}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31   \begin{Problem}
-                      )
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.18 \include{sheet4}
-                      [1
-
-
-
-]
-\openout2 = `sheet4_sol.aux'.
-
- (./sheet4_sol.tex
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9   \begin{Solution}
-                      
-Overfull \hbox (4.90102pt too wide) in paragraph at lines 20--64
-\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = [] = [] [] [] 
- []
-
-
-Overfull \hbox (13.35944pt too wide) in paragraph at lines 20--64
-[] [] \OT1/cmr/m/n/10 = [] = \OML/cmm/m/it/10 A[][] 
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.66   \begin{Solution}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73   \begin{Solution}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.74   \end{Solution}
-                      [1
-
-
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.76   \begin{Solution}
-                       
-Overfull \hbox (10.21881pt too wide) in paragraph at lines 83--85
-\T1/cmr/m/n/10 https://math.stackexchange.com/questions/3875168/eigenvalues-of-a-tridiagonal-
- []
-
-
-Overfull \hbox (45.57129pt too wide) in paragraph at lines 86--87
-[]\T1/cmr/m/n/10 https://math.stackexchange.com/questions/177957/eigenvalues-of-tridiagonal-symmetric-
- []
-
-)
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.19 \include{sheet4_sol}
-                          [2]
-\openout2 = `sheet5.aux'.
-
- (./sheet5.tex
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9   \begin{Problem}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.14   \begin{Problem}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.27   \begin{Problem}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.40   \begin{Problem}
-                      [Programming])
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 \include{sheet5}
-                      [1
-
-
-
-]
-\openout2 = `sheet5_sol.aux'.
-
- (./sheet5_sol.tex
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9   \begin{Solution}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.28   \begin{Solution}
-                       
-Underfull \hbox (badness 10000) in paragraph at lines 29--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--45
-
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47   \begin{Solution}
-                        (a) \Claim $M := (H_0 - \sigma_1 \I)(H_0 - \sigma_2 ...
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.49     \Proof \begin{align}
-                              [1
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 63--68
-
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.80   \begin{Solution}
-                       [Programming])
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.21 \include{sheet5_sol}
-                          [2] (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36013 strings out of 474971
- 702610 string characters out of 5780120
- 1078130 words of memory out of 5000000
- 56780 multiletter control sequences out of 15000+600000
- 480688 words of font info for 57 fonts, out of 8000000 for 9000
+ 36046 strings out of 474971
+ 702944 string characters out of 5780120
+ 1146172 words of memory out of 5000000
+ 56841 multiletter control sequences out of 15000+600000
+ 477094 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 144i,17n,146p,614b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (18 pages, 314536 bytes).
+ 144i,5n,146p,614b,469s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (1 page, 95433 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 67 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

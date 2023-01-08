@@ -56,7 +56,7 @@ Laplace<d>::vmult(const std::vector<double>& v) const
     {
       w[i] = 0.;
       for (unsigned int j=0; j<N; ++j)
-	w[i] += (*this)(i,j)*v[j];
+	      w[i] += (*this)(i,j)*v[j];
     }
   return w;
 }
