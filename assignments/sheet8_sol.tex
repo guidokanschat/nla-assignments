@@ -23,8 +23,7 @@
   \end{Solution}
 
   \begin{Solution}[{\cite[P-5.1 b]{Saad00}}]
-    We start with some preliminaries before we prove the statement.
-
+    \hfill\\
     Hint 1:
     \begin{gather*}
       \scal(\mata\vd^{(k+1)},\vd^{(k+1)})
@@ -37,63 +36,7 @@
       \abs{\ve_i^T \vr^{(k)}} \geq n^{-\nfrac12}\norm{\vr^{(k)}}_2
     \end{gather*}
 
-    \begin{todo}
-    1. Since $\ve_i\in K=L$, it holds the Galerkin-orthogonality
-    \marginpar{This is wrong, as the update is a multiple of $\ve_i$, say $\alpha\ve_i$}
-    \begin{align*}
-      \scal(\vr^{(k)}-\alpha\mata \ve_i,\ve_i) = 0,
-    \end{align*}
-    where according to Example 2.3.10
-    \begin{gather}
-      \alpha = \frac{\scal(\vr^{(k)},\ve_i)}{\scal(\mata\ve_i,\ve_i)}
-      = \frac{\scal(\vr^{(k)},\ve_i)}{a_{ii}}
-      .
-    \end{gather}
-    This would have been used to show hint 1.
-    \begin{align*}
-      a_{ii}
-      = \ve_i^T\mata \ve_i
-      = \scal(\mata \ve_i,\ve_i)
-      = \tfrac1\alpha \scal(\vr^{(k)},\ve_i)
-      = \tfrac1\alpha\abs{\ve_i^T\vr^{(k)}}
-      = \tfrac1\alpha\norm{\vr^{(k)}}_{\infty}
-    \end{align*}
-    meaning that $a_{ii}$ is not only an element of the diagonal of
-    $\mata$, but also the maximal value of the residual vector, since
-    $i$ has been chosen that way.      
-    \end{todo}
-
-    \begin{todo}
-      Next, we have by definition
-      \marginpar{Do we need that much detail?}
-    \begin{align*}
-      \mata\vd^{(k)}
-      = \mata\left(\mata^{-1}\vb-\vx^{(k)}\right)
-      = \vb-\mata\vx^{(k)}
-      = \vr^{(k)},
-    \end{align*}
-    and
-    \begin{align*}
-      \vd{(k)}
-      = \mata^{-1}\vb-\vx^{(k)}
-      = \mata^{-1}\left(\vb-\mata\vx^{(k)} \right)
-      = \mata^{-1} \vr^{(k)},
-    \end{align*}
-    implying
-    \begin{align*}
-      \frac{\scal(\mata\vd^{(k)},\vd^{(k)})}{\norm{\vr^{(k)}}^2}
-      = \frac{\scal(\mata^{-1}\vr^{(k)},\vr^{(k)})}{\scal(\vr^{(k)},\vr^{(k)})}
-      = R_{\mata^{-1}}(\vr^{(k)})
-      \leq \lambda_{\max}(\mata^{-1})
-      = \frac1{\lambda_{\min}},
-    \end{align*}
-    where
-    $R_{\mata^{-1}}(\vx)=\frac{\scal(\mata^{-1}\vx,\vx)}{\scal(\vx,\vx)}$
-    is the Rayleigh-quotient
-    \end{todo}
-
-    With the help of Hint 1 and the forgoing
-    statements we get
+    With the help of hint 1 and 2 we get
     \begin{align*}
       \norm{\vd^{(k+1)}}_{\mata}^2
       = \scal(\mata\vd^{(k+1)},\vd^{(k+1)})
@@ -112,20 +55,39 @@
         \norm{\vd^{(k)}}_{\mata}^2
     \end{align*}
     The result follows by the following two estimates of Rayleigh quotients:
-    \begin{gather}
+    \begin{gather*}
       a_{ii} = \scal(\mata\ve_i,\ve_i) = \frac{\scal(\mata\ve_i,\ve_i)}{\scal(\ve_i,\ve_i)}
       \le \lambda_{\max},
-    \end{gather}
+    \end{gather*}
     and
-    \begin{gather}
+    \begin{gather*}
       \frac{\scal(\mata\vd^{(k)},\vd^{(k)})}{\norm{\vr^{(k)}}^2}
       = \frac{\scal(\vr^{(k)},\mata^{-1}\vr^{(k)})}{\norm{\vr^{(k)}}^2}
-      \le \lambda_{\max}(\mata^{-1}) = \frac1{\lambda_\min}.
-    \end{gather}
+      \le \lambda_{\max}(\mata^{-1})
+      = \frac1{\lambda_{\min}}.
+    \end{gather*}
 
-    \begin{todo}
-      Write final arguments
-    \end{todo}
+    Final remarks:\\
+    1. Since $\ve_i\in K=L$, it holds the Galerkin-orthogonality
+    \begin{align*}
+      \scal(\vr^{(k)}-\alpha\mata \ve_i,\ve_i) = 0,
+    \end{align*}
+    where according to Example 2.3.10
+    \begin{gather*}
+      \alpha = \frac{\scal(\vr^{(k)},\ve_i)}{\scal(\mata\ve_i,\ve_i)}
+      = \frac{\scal(\vr^{(k)},\ve_i)}{a_{ii}}
+      .
+    \end{gather*}
+    This would have been used to show hint 1.
+
+    2. To show hint 2, notice that by the choice of $i$ as maximal
+    value of the residual vector
+    \begin{align*}
+      \norm{\vr^{(k)}}_2
+      \leq \sqrt{n} \norm{\vr^{(k)}}_{\infty}
+      = \sqrt{n} \abs{\ve_i^T\vr^{(k)}}
+    \end{align*}
+
   \end{Solution}
 
   \begin{Solution}
@@ -139,9 +101,6 @@
     seen in the plot, the convergence of the steepest decent method is
     sublinear.
 
-    \begin{todo}
-      What are the axes?
-    \end{todo}
     \includegraphics[width=\textwidth]{figures/laplace-steepest-decent}
   \end{Solution}
 
