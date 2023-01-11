@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 10
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until January 20, 2023, 2pm.]
+  \label{sheet10}
+
+  \begin{Problem}[{\cite[Exercise 6.21]{Saad00}}]
+    % Saad Aufgabe 21 (S. 214)
+    Consider a matrix of the form:
+    \begin{gather*}
+      \mata = \id + \alpha \matb
+    \end{gather*}
+    where $\matb$ is skew-symmetric (real), that is,
+    $\matb^T = -\matb$.
+    \begin{enumerate}[(a)]
+    \item Show that
+      \begin{gather*}
+        \frac{\scal(\mata\vx,\vx)}{\scal(\vx,\vx)} = 1
+      \end{gather*}
+      for all nonzero $\vx$.
+    \item\label{sheet10:problem1:partb} Consider the Arnoldi process
+      for $\mata$. Show that the resulting Hessenberg matrix will have
+      the following tridiagonal form
+      \begin{gather*}
+        \matH_m =
+        \begin{pmatrix}
+          1&-\eta_2&&& \\
+          \eta_2&1&-\eta_3&& \\
+           &\ddots&\ddots&\ddots& \\
+           &&\eta_{m-1}&1&-\eta_m \\
+           &&&\eta_m&1
+        \end{pmatrix}
+        .
+      \end{gather*}
+    \item Using the result of part \eqref{sheet10:problem1:partb},
+      explain why the conjugate gradient method applied to a linear
+      system with the matrix $\mata$ will still yield residual vectors
+      that are orthogonal to each other.
+    \item Can this algorithm break down before the solution is
+      reached?
+    \end{enumerate}
+  \end{Problem}
+
+  \begin{Problem}[{\cite[Exercise 6.8]{Saad00}}]
+    Show how GMRES (Algorithm 2.3.41 in the lecture notes) and Arnoldi
+    with modified Gram-Schmidt (Algorithm 2.3.29 in the lecture notes)
+    will converge on the linear system $\mata\vx=\vb$ when
+    \begin{gather*}
+      \mata =
+      \begin{pmatrix}
+        &&&&1\\
+        1&&&&\\
+        &1&&&\\
+        &&1&&\\
+        &&&1&
+      \end{pmatrix},
+      \quad
+      \vb =
+      \begin{pmatrix}
+        1\\ 0\\ 0\\ 0\\ 0
+      \end{pmatrix},
+    \end{gather*}
+    and $\vx_0 = \boldsymbol 0$.
+  \end{Problem}
+
+  \begin{Problem}[Programming]
+    \hfill\\\vspace{-4ex}
+    \begin{enumerate}[(a)]
+    \item Implement the conjugate gradient method (Algorithm 2.3.57 in
+      the lecture notes).
+    \item Use your implementation to solve the 2D Laplace problem
+      \begin{gather*}
+        \matl_2\vx=\vb
+      \end{gather*}
+      as in \cref{sheet7:problem4} on \cref{sheet7} with right hand
+      side vector $\vb=(1,...,1)^T$ and initial guess
+      $\vx^{(0)}=(0,...,0)^T$ with $n=50$ and $n=100$. Observe the
+      convergence for the first 50 steps. What convergence rate do you
+      expect? Compare your results of the conjugate gradient method
+      with the steepest decent method from \cref{sheet8:problem4} of
+      \cref{sheet8}.
+    \end{enumerate}
+  \end{Problem}
+
+  \vfill
+  \bibliographystyle{alpha}
+  \bibliography{bib}
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 
