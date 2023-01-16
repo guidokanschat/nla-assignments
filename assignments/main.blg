@@ -18,10 +18,12 @@ A level-1 auxiliary file: sheet7_sol.aux
 A level-1 auxiliary file: sheet8.aux
 The style file: alpha.bst
 A level-1 auxiliary file: sheet8_sol.aux
+A level-1 auxiliary file: sheet9.aux
+A level-1 auxiliary file: sheet9_sol.aux
 Database file #1: bib.bib
 You've used 1 entry,
             2543 wiz_defined-function locations,
-            582 strings with 4713 characters,
+            584 strings with 4737 characters,
 and the built_in function-call counts, 306 in all, are:
 = -- 26
 > -- 8
