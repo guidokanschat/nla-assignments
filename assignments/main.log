@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.18)  8 JAN 2023 14:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.18)  16 JAN 2023 10:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -836,28 +836,40 @@ Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
 ) (c:/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+
+c:/Users/laura/OneDrive/Documents/1_Studium/Tutorieren/NLA_Kanschat_WS2223/nla-assignments-git/assignments/main.tex:8: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 <
+     <<<<<< HEAD
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 \tikzscale@accuracy=\skip74
- (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux) (./sheet6.aux) (./sheet6_sol.aux) (./sheet7.aux) (./sheet7_sol.aux) (./sheet8.aux) (./sheet8_sol.aux) (./sheet9.aux) (./sheet9_sol.aux))
+(./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count400
@@ -877,34 +889,36 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 10.
- (./main.out) (./main.out)
+Package hyperref Info: Link coloring OFF on input line 14.
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 10.
-Package gensymb Info: Math companion symbols declared on input line 10.
-LaTeX Info: Redefining \degree on input line 10.
-LaTeX Info: Redefining \celsius on input line 10.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 10.
-LaTeX Info: Redefining \ohm on input line 10.
-Package gensymb Info: Using \textohm for \ohm on input line 10.
-Package gensymb Info: Using \textmu for \micro on input line 10.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 14.
+Package gensymb Info: Math companion symbols declared on input line 14.
+LaTeX Info: Redefining \degree on input line 14.
+LaTeX Info: Redefining \celsius on input line 14.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 14.
+LaTeX Info: Redefining \ohm on input line 14.
+Package gensymb Info: Using \textohm for \ohm on input line 14.
+Package gensymb Info: Using \textmu for \micro on input line 14.
 \c@lstlisting=\count406
 Package newfloat Info: Trying Plan B...
 
 No file pythontex-files-main/main.pytxmcr.
 Run PythonTeX to create it.
-Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 10.
+Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 14.
 \c@listing=\count407
 \newfloat@ftype=\count408
-Package newfloat Info: float type `listing'=8 on input line 10.
+Package newfloat Info: float type `listing'=8 on input line 14.
 \c@lopytxdepth=\count409
+[1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `sheet1.aux'.
 
-(./sheet1.tex
+ (./sheet1.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -928,10 +942,14 @@ Overfull \hbox (2.53416pt too wide) in paragraph at lines 65--67
 []\T1/cmr/bx/n/10 Problem 2. []\T1/cmr/m/n/10 Proof that every finite-dimensional vector space with scalar product
  []
 
-[1
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78   \end{gather*}
+                     [1
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+]
 Overfull \hbox (4.88666pt too wide) in paragraph at lines 85--87
 []\T1/cmr/m/n/10 Generates an orthonormal basis from a given set of $\OML/cmm/m/it/10 n$ $n$\T1/cmr/m/n/10 -dimensional complex
  []
@@ -940,6 +958,10 @@ Overfull \hbox (4.88666pt too wide) in paragraph at lines 85--87
 \openout2 = `sheet1_sol.aux'.
 
  (./sheet1_sol.tex
+
+LaTeX Warning: Reference `sheet1' on page 1 undefined on input line 15.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -967,7 +989,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--75
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 \include{sheet1_sol}
+l.17 \include{sheet1_sol}
                           [2]
 \openout2 = `sheet2.aux'.
 
@@ -1000,7 +1022,7 @@ l.30   \begin{Problem}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14 \include{sheet2}
+l.18 \include{sheet2}
                       [1
 
 
@@ -1009,6 +1031,10 @@ l.14 \include{sheet2}
 \openout2 = `sheet2_sol.aux'.
 
  (./sheet2_sol.tex
+
+LaTeX Warning: Reference `sheet2' on page 1 undefined on input line 8.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1086,6 +1112,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4
                    \relax 
 l.58   \begin{Problem}
                       [Programming]
+
+LaTeX Warning: Reference `problem:shift' on page 1 undefined on input line 79.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1094,15 +1124,23 @@ l.81       \begin{todo}
 
 
 
-])
+]
+
+LaTeX Warning: Reference `sheet3:prob4:parta' on page 2 undefined on input line 88.
+
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 \include{sheet3}
+l.20 \include{sheet3}
                       [2]
 \openout2 = `sheet3_sol.aux'.
 
  (./sheet3_sol.tex
+
+LaTeX Warning: Reference `sheet3' on page 1 undefined on input line 6.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1123,7 +1161,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) h
                    \relax 
 l.30   \begin{Solution}
                        
-<include/sheet3_ex2.png, id=91, 433.62pt x 289.08pt>
+<include/sheet3_ex2.png, id=89, 433.62pt x 289.08pt>
 File: include/sheet3_ex2.png Graphic file (type png)
 <use include/sheet3_ex2.png>
 Package pdftex.def Info: include/sheet3_ex2.png  used on input line 39.
@@ -1132,12 +1170,12 @@ Package pdftex.def Info: include/sheet3_ex2.png  used on input line 39.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42     \end{equation*}
-                         [1
+l.40     (b) Wikipedia: \begin{equation*}
+                                          [1
 
 
 
- <./include/sheet3_ex2.png>]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 42--58
 
  []
@@ -1156,8 +1194,8 @@ l.72   \begin{Solution}
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 \include{sheet3_sol}
-                          [2]
+l.21 \include{sheet3_sol}
+                          [2 <./include/sheet3_ex2.png>]
 \openout2 = `sheet4.aux'.
 
  (./sheet4.tex
@@ -1180,11 +1218,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4
 <to be read again> 
                    \relax 
 l.31   \begin{Problem}
-                      )
+                      
+
+LaTeX Warning: Reference `sheet6' on page 1 undefined on input line 45.
+
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 \include{sheet4}
+l.22 \include{sheet4}
                       [1
 
 
@@ -1193,6 +1235,10 @@ l.18 \include{sheet4}
 \openout2 = `sheet4_sol.aux'.
 
  (./sheet4_sol.tex
+
+LaTeX Warning: Reference `sheet4' on page 1 undefined on input line 6.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1213,20 +1259,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) h
                    \relax 
 l.66   \begin{Solution}
                        
-pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.73   \begin{Solution}
-                       
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.75   \end{Solution}
+l.71   \end{Solution}
                       [1
 
 
 
 ]
+pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73   \begin{Solution}
+                       
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1245,7 +1291,7 @@ Overfull \hbox (45.57129pt too wide) in paragraph at lines 90--91
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 \include{sheet4_sol}
+l.23 \include{sheet4_sol}
                           [2]
 \openout2 = `sheet5.aux'.
 
@@ -1273,7 +1319,7 @@ l.50   \begin{Problem}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \include{sheet5}
+l.24 \include{sheet5}
                       [1
 
 
@@ -1282,6 +1328,10 @@ l.20 \include{sheet5}
 \openout2 = `sheet5_sol.aux'.
 
  (./sheet5_sol.tex
+
+LaTeX Warning: Reference `sheet5' on page 1 undefined on input line 6.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1307,20 +1357,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--45
  []
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45   \end{Solution}
+                      [1
+
+
+
+]
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47   \begin{Solution}
                         (a) \Claim $M := (H_0 - \sigma_1 \I)(H_0 - \sigma_2 ...
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.49     \Proof \begin{align}
-                              [1
-
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
@@ -1334,7 +1384,7 @@ l.80   \begin{Solution}
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 \include{sheet5_sol}
+l.25 \include{sheet5_sol}
                           [2]
 \openout2 = `sheet6.aux'.
 
@@ -1359,6 +1409,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4
                    \relax 
 l.79   \begin{Problem}
                       
+
+LaTeX Warning: Reference `sheet6:problem3' on page 1 undefined on input line 80.
+
+
+LaTeX Warning: Reference `sheet6:problem2' on page 1 undefined on input line 82.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1371,11 +1428,15 @@ l.87       \begin{todo}
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 \include{sheet6}
+l.26 \include{sheet6}
                       [2]
 \openout2 = `sheet6_sol.aux'.
 
  (./sheet6_sol.tex
+
+LaTeX Warning: Reference `sheet6' on page 1 undefined on input line 6.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1453,6 +1514,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{classproblem.3
                    \relax 
 l.58   \begin{Problem}
                       
+
+LaTeX Warning: Reference `sheet6:problem2' on page 1 undefined on input line 64.
+
+
+LaTeX Warning: Reference `sheet6' on page 1 undefined on input line 64.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1462,19 +1530,34 @@ l.98     \end{gather*}
 
 
 ]
+
+LaTeX Warning: Reference `sheet7:problem2' on page 1 undefined on input line 100.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.110   \begin{Problem}
-                       [Programming])
+                       [Programming]
+
+LaTeX Warning: Reference `sheet7:problem3' on page 1 undefined on input line 118.
+
+
+LaTeX Warning: Reference `sheet7:problem4:parta' on page 2 undefined on input line 128.
+
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 \include{sheet7}
+l.28 \include{sheet7}
                       [2]
 \openout2 = `sheet7_sol.aux'.
 
  (./sheet7_sol.tex
+
+LaTeX Warning: Reference `sheet7' on page 1 undefined on input line 6.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1503,7 +1586,7 @@ Overfull \hbox (9.63226pt too wide) in paragraph at lines 18--20
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 \include{sheet7_sol}
+l.29 \include{sheet7_sol}
                           [1
 
 
@@ -1522,6 +1605,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{classproblem.2
                    \relax 
 l.38   \begin{Problem}
                       [{\cite[P-5.1 b]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 38.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1531,11 +1618,19 @@ l.68       \end{todo}
 
 
 ]
+
+LaTeX Warning: Reference `sheet8:problem2:part-a' on page 2 undefined on input line 69.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{classproblem.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.74   \begin{Problem}
                       [{\cite[P-5.6]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 2 undefined on input line 74.
+
+
 Overfull \hbox (2.06027pt too wide) in paragraph at lines 81--85
 []\T1/cmr/m/n/10 For a basis of $\OML/cmm/m/it/10 K$ \T1/cmr/m/n/10 use the vector $\OT1/cmr/bx/n/10 r$ \T1/cmr/m/n/10 and the vector $\OT1/cmr/bx/n/10 p$ \T1/cmr/m/n/10 obtained by orthogonalizing
  []
@@ -1550,26 +1645,38 @@ pdfTeX warning (ext4): destination with the same identifier (name{classproblem.4
 <to be read again> 
                    \relax 
 l.93   \begin{Problem}
-                      [Programming] (./main.bbl))
+                      [Programming]
+
+LaTeX Warning: Reference `sheet7:problem4' on page 1 undefined on input line 104.
+
+
+LaTeX Warning: Reference `sheet7' on page 1 undefined on input line 104.
+
+No file main.bbl.
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 \include{sheet8}
+l.30 \include{sheet8}
                       [2]
 \openout2 = `sheet8_sol.aux'.
 
  (./sheet8_sol.tex
+
+LaTeX Warning: Reference `sheet8' on page 1 undefined on input line 6.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.8   \begin{Solution}
                       
-<figures/lu-decomposition-of-sparse-matrix.png, id=230, 462.528pt x 346.896pt>
+<figures/lu-decomposition-of-sparse-matrix.png, id=207, 462.528pt x 346.896pt>
 File: figures/lu-decomposition-of-sparse-matrix.png Graphic file (type png)
 <use figures/lu-decomposition-of-sparse-matrix.png>
 Package pdftex.def Info: figures/lu-decomposition-of-sparse-matrix.png  used on input line 13.
 (pdftex.def)             Requested size: 276.00105pt x 207.01175pt.
-<figures/lu-decomposition-of-sparse-matrix-off4.png, id=231, 462.528pt x 346.896pt>
+<figures/lu-decomposition-of-sparse-matrix-off4.png, id=208, 462.528pt x 346.896pt>
 File: figures/lu-decomposition-of-sparse-matrix-off4.png Graphic file (type png)
 <use figures/lu-decomposition-of-sparse-matrix-off4.png>
 Package pdftex.def Info: figures/lu-decomposition-of-sparse-matrix-off4.png  used on input line 17.
@@ -1580,40 +1687,44 @@ pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) h
                    \relax 
 l.25   \begin{Solution}
                        [{\cite[P-5.1 b]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 25.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28     H
-          int 1: [1
+l.28     \begin{gather*}
+                         [1
 
 
 
  <./figures/lu-decomposition-of-sparse-matrix.png> <./figures/lu-decomposition-of-sparse-matrix-off4.png>]
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.101     \end{todo}
-                     [2]
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.134   \begin{Solution}
-                        
+l.93   \begin{Solution}
+                       
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137   \begin{Solution}
-                        [Programming]
-<figures/laplace-steepest-decent.png, id=245, 462.528pt x 346.896pt>
+l.96   \begin{Solution}
+                       [Programming]
+<figures/laplace-steepest-decent.png, id=218, 462.528pt x 346.896pt>
 File: figures/laplace-steepest-decent.png Graphic file (type png)
 <use figures/laplace-steepest-decent.png>
-Package pdftex.def Info: figures/laplace-steepest-decent.png  used on input line 145.
+Package pdftex.def Info: figures/laplace-steepest-decent.png  used on input line 104.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
-)
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105   \end{Solution}
+                       [2])
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 \include{sheet8_sol}
+l.31 \include{sheet8_sol}
                           [3 <./figures/laplace-steepest-decent.png>]
 \openout2 = `sheet9.aux'.
 
@@ -1646,7 +1757,7 @@ l.37   \begin{Problem}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 \include{sheet9}
+l.32 \include{sheet9}
                       [1
 
 
@@ -1655,6 +1766,10 @@ l.28 \include{sheet9}
 \openout2 = `sheet9_sol.aux'.
 
  (./sheet9_sol.tex
+
+LaTeX Warning: Reference `sheet9' on page 1 undefined on input line 6.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1683,28 +1798,141 @@ l.20   \begin{Solution}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 \include{sheet9_sol}
+l.33 \include{sheet9_sol}
                           [1
 
 
 
-] (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux) (./sheet6.aux) (./sheet6_sol.aux) (./sheet7.aux) (./sheet7_sol.aux) (./sheet8.aux) (./sheet8_sol.aux) (./sheet9.aux) (./sheet9_sol.aux))
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+]
+\openout2 = `sheet10.aux'.
+
+ (./sheet10.tex
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9   \begin{Problem}
+                     [{\cite[Exercise 6.21]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 9.
+
+
+LaTeX Warning: Reference `sheet10:problem1:partb' on page 1 undefined on input line 37.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46   \begin{Problem}
+                      [{\cite[Exercise 6.8]{Saad00}}]
+
+LaTeX Warning: Citation `Saad00' on page 1 undefined on input line 46.
+
+
+LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
+(Font)              using `U/stmry/m/n' instead on input line 65.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{classproblem.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68   \begin{Problem}
+                      [Programming]
+
+LaTeX Warning: Reference `sheet7:problem4' on page 1 undefined on input line 77.
+
+
+LaTeX Warning: Reference `sheet7' on page 1 undefined on input line 77.
+
+
+LaTeX Warning: Reference `sheet8:problem4' on page 1 undefined on input line 82.
+
+
+LaTeX Warning: Reference `sheet8' on page 1 undefined on input line 83.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84     \end{enumerate}
+                         [1
+
+
+
+]
+No file main.bbl.
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 \include{sheet10}
+                       [2]
+\openout2 = `sheet10_sol.aux'.
+
+ (./sheet10_sol.tex
+
+LaTeX Warning: Reference `sheet10' on page 1 undefined on input line 6.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{Solution.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8   \begin{Solution}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{Solution.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11   \begin{Solution}
+                       
+pdfTeX warning (ext4): destination with the same identifier (name{Solution.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14   \begin{Solution}
+                       
+pdfTeX warning (ext4): destination with the same identifier (name{Solution.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17   \begin{Solution}
+                       [Programming])
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 \include{sheet10_sol}
+                           [1
+
+
+
+] (./main.aux (./sheet1.aux) (./sheet1_sol.aux) (./sheet2.aux) (./sheet2_sol.aux) (./sheet3.aux) (./sheet3_sol.aux) (./sheet4.aux) (./sheet4_sol.aux) (./sheet5.aux) (./sheet5_sol.aux) (./sheet6.aux) (./sheet6_sol.aux) (./sheet7.aux) (./sheet7_sol.aux) (./sheet8.aux) (./sheet8_sol.aux) (./sheet9.aux) (./sheet9_sol.aux) (./sheet10.aux) (./sheet10_sol.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36844 strings out of 474971
- 716905 string characters out of 5780120
+ 36861 strings out of 474971
+ 717944 string characters out of 5780120
  1169172 words of memory out of 5000000
- 57498 multiletter control sequences out of 15000+600000
- 483333 words of font info for 61 fonts, out of 8000000 for 9000
+ 57535 multiletter control sequences out of 15000+600000
+ 484646 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  144i,17n,146p,614b,1470s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (34 pages, 445729 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on main.pdf (38 pages, 437911 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 88 named destinations out of 1000 (max. 500000)
+ 375 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 93 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
