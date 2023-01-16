@@ -112,6 +112,8 @@ plt.loglog(x,r_laplace100,'r', label='n=100, 2D Laplace')
 plt.loglog(x,y,'g', label='linear convergence')
 plt.legend()
 plt.title("Steepest decent convergence of residual")
+plt.xlabel("iterations")
+plt.ylabel("residual")
 plt.show()
 
 
