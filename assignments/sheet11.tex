@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 11
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until January 27, 2023, 2pm.]
+  \label{sheet11}
+
+  \begin{Problem}
+    Let $\mata$ and $\matb$ be symmetric positive-definite matrices in
+    $\R^{n\times n}$. Let there be constants $c_1,c_2$ such that
+    \begin{gather*}
+      c_1 \vx^T\mata\vx \leq \vx^T\matb\vx \leq c_2 \vx^T\mata\vx.
+    \end{gather*}
+    Derive an estimate for the convergence of the conjugate gradient
+    iteration for $\mata\vx=\vb$ with preconditioner $\matb^{-1}$
+    depending on $c_1$ and $c_2$.
+
+    \textit{Hints:} Lemma 2.3.80 in the lecture notes, and Thereom
+    1.2.5 (note, that the definition of the Rayleigh quotient is
+    independent of the choice of the inner product).
+  \end{Problem}
+
+  \begin{Problem}
+    Consider again the 2D Laplace operator $\matl_2$, discretized by
+    the five-point-stencel, as in \cref{sheet7:problem4} on
+    \cref{sheet7}.
+    \begin{enumerate}[(a)]
+    \item Implement a method that computes the smallest eigenvalue of
+      $\matl_2$ using the inverse iteration (Algorithm 1.3.6 in the
+      lecture notes).  Do not calculate the invers explicitely for
+      solving the appearing linear system, but use the conjugate
+      gradient iteration (Algorithm 2.3.57 in the lecture notes) for
+      this matter.
+    \item Use your implementation to calculate the smallest eigenvalue
+      of $\matl_2$ for $n~=~50$ and $n=100$.
+    \end{enumerate}
+  \end{Problem}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 

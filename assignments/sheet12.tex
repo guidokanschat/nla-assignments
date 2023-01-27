@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numerical Linear Algebra class 2022 
+% Sheet 12
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{Sheet}[to be handed in until February 3, 2023, 2pm.]
+  \label{sheet12}
+
+  \begin{Problem}[{\cite[P-6.8]{Saad00}}]
+    Show that the vector $\vv_{m+1}$ obtained at the last step of
+    Arnoldi's method is of the form
+    \begin{gather*}
+      \vv_{m+1} = \gamma p_m(\mata)\vv_1,
+    \end{gather*}
+    in which $\gamma$ is a certain normalizing scalar and $p_m$ is the
+    characteristic polynomial of the Hessenberg matrix $\matH_m$.
+  \end{Problem}
+
+  \begin{Problem}[{\cite[P-6.9]{Saad00}}]
+    Develop a modified version of the non-Hermitian Lanczos algorithm
+    that produces a sequence of vectors $\vv_i$ ,$\vw_i$ that are such
+    that each $\vv_i$ is orthogonal to every $\vw_j$ with $j\neq i$
+    and $\norm{\vv_i}=\norm{\vw_i}=1$ for all $i$.  What does the
+    projected problem become?
+  \end{Problem}
+
+  \begin{Problem}
+    The coefficients of the Hessenberg matrix $\matH_m$ in the
+    conjugate gradient iteration can be used to compute the
+    eigenvalues of a matrix $\mata$.  Use this to develop a method
+    that approximates the eigenvalues of a symmetric positiv definit
+    matrix $\mata$.
+  \end{Problem}
+
+  \vfill
+  \bibliographystyle{alpha}
+  \bibliography{bib}
+
+\end{Sheet}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End: 
