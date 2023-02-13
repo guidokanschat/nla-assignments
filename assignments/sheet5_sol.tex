@@ -4,19 +4,83 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{SolutionSheet}[\ref{sheet5}]
+\begin{onehalfspace}
 
   \begin{Solution}
+    \Claim $A$ normal, triangular $\implies A$ diagonal \\
+    \Proof Note \textit{(1)}: \begin{align*}
+        \norm{Ae_i}^2 &= \langle Ae_i, Ae_i \rangle \\
+        &= \langle e_i, A^*Ae_i \\
+        &\stackrel{A \text{normal}}{=} \langle e_i, AA^* e_i \rangle \\
+        &= \langle A^*e_i , A^*e_i \rangle \\
+        &= \norm{A^*e_i}
+      \end{align*}
+      WLOG: $A$ upper triangluar.\\
+      $\implies$ \begin{equation*}
+        | a_{11} |^2 \quad \stackrel{\text{upper triang.}}{=} \quad \norm{Ae_1}^2 \
+        \stackrel{\textit{(1)}}{=} \ \norm{A^*e_1} \ = \ \sum_{i=1}^{n} | a_{1i} |^2
+      \end{equation*}
+      $\implies \sum_{i=2}^{n} | a_{1i}|^2 = 0 \\
+      \implies a_{1i} = 0 \quad \forall i=2,...,n\\
+      \longrightarrow$ continue with rest of $e_i$
   \end{Solution}
 
   \begin{Solution}
+    (a)+(b) \Claim $\forall A \in \mathbb{R}^{n\x n}$ every complex eigenvalue and their 
+    corresponding eigenvectors come in complex conjugate pairs. \\
+    \\
+    \Proof Let $v$ be an eigenvector to an eigenvalue $\lambda$ of $A$.\\
+    $\implies Av = \lambda v \\
+    \implies A \overline{v} \stackrel{A \text{ real}}{=} \overline{Av} = \overline{\lambda} \overline{v} \\
+    \implies (\overline{\lambda}, \overline{v})$ is eigenpair of $A$. \\
+    \\
+    (c) \Claim for each complex eigenvalue pair, there is a $2\x 2$ matrix with according invariant subspace.\\
+    \Proof Let $\lambda=a+bi$ be an eigenvalue of $A$ with corresponding eigenvector $v= x+iy$ \\
+    $\implies \lambda v = ax+iay+ibx-by = (ax-by) + i(bx+ay)$ \\
+    and  $Av = Ax + iAy$ \\
+    $\implies Ax = ax-by, \quad Ay = ab+ay$ \\
+    Choose matrix \smatrix{a}{-b}{b}{a}: \\
+    \\
+    $\implies$ \smatrix{a}{-b}{b}{a} \svector{x}{y} = \svector{Ax}{Ay}
   \end{Solution}
 
-  \begin{Solution}
+  \begin{Solution} (a) \Claim $M := (H_0 - \sigma_1 \I)(H_0 - \sigma_2 \I) \stackrel{QR-fact}{=} Q_1Q_2R_2R_1$ \\
+     where $H_0 - \sigma_1 \I = Q_1R_1 \ $ and $ \ H_1 - \sigma_2 \I = Q_2R_2$ \\
+    \Proof \begin{align}
+      H_0 - \sigma_1 \I &= Q_1R_1 \\
+      H_1 &= R_1Q_1 + \sigma_1 \I \\
+      H_1 - \sigma_2 \I &= Q_2R_2 \\
+      H_2 &= R_2Q_2 + \sigma_2 \I
+    \end{align}
+    $\implies$ \begin{align*}
+      Q_1Q_2R_2R_1 &\stackrel{\textit{(4)}}{=} Q_1(H_1 - \sigma_2 \I)R_1 \\
+      &\stackrel{\textit{(3)}}{=} Q_1((R_1Q_1 + \sigma_1) - \sigma_2 \I)R_1 \\
+      &= Q_1(R_1Q_1 + (\sigma_1 - \sigma_2) \I)R_1 \\
+      &= Q_1R_1Q_1R_1 + (\sigma_1 - \sigma_2)Q_1R_1 \\
+      &= Q_1R_1(Q_1R_1 + (\sigma_1 - \sigma_2)\I) \\
+      &\stackrel{\textit{(2)}}{=} (H_0 - \sigma_1 \I)((H_0 - \sigma_1 \I) + (\sigma_1 - \sigma_2)\I) \\
+      &= (H_0 - \sigma_1 \I)(H_0 - \sigma_2 \I) \quad = \quad M 
+    \end{align*}
+    and $Q_1, Q_2$ orthogonal $\implies Q_1Q_2$ orthogonal\\
+    $\stackrel{\text{QR fact unique}}{\implies} Q_1Q_2R_2R_1$ is QR factorization of $M$. \\
+    \\
+    (b) \Claim $(Q_1Q_2)^* H_0 (Q_1Q_2) = H_2$ \\
+    \Proof \begin{align*}
+      (Q_1Q_2)^* H_0 (Q_1Q_2) &= Q_2^* Q_1^* H_1 Q_1Q_2 \\
+      &\stackrel{\textit{(2)}}{=} Q_2^*Q_1^*(Q_1R_1 + \sigma_1 \I)Q_1Q_2 \\
+      &= Q_2^*R_1Q_1Q_2 + \sigma_1 \I \\
+      & \stackrel{\textit{(3)}}{=} Q_2^*(H_1 - \sigma_1 \I)Q_2 + \sigma_1 \I \\
+      &= Q_2^*H_1Q_2 - \sigma_1 \I + \sigma_1 \I \\
+      & \stackrel{\textit{(4)}}{=} Q_2^* (Q_2R_2 + \sigma_2 \I)Q_2 \\
+      &= R_2Q_2 + \sigma_2 \I \\
+      & \stackrel{\textit{(5)}}{=} H_2
+    \end{align*}
   \end{Solution}
 
   \begin{Solution}[Programming]
   \end{Solution}
 
+\end{onehalfspace}
 \end{SolutionSheet}
 
 

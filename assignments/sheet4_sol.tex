@@ -4,17 +4,80 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{SolutionSheet}[\ref{sheet4}]
-
+\begin{onehalfspace}
+  
   \begin{Solution}
+    \Claim The QR-iteration preserves the tridiagonal structure of a symmetric tridiagonal matrix. \\
+    \Proof We know for the QR-iteration $A_{k+1} = R_kQ_k$ and $A_k = Q_kR_k$ \\
+      $\implies A_{k+1} = Q_k^*A_kQ_k \\
+      \implies A_{k+1} = U_k^*A_0 U_k$ with $U_k = Q_1 \dot ... \dot Q_k \\
+      \implies$ with $A_0$ is $A_{k+1}$ also hermitian: \begin{equation*}
+        A_{k+1}^* = (U_k^*A_0 U_k)^T = U_k^T A_0^T (U_k^*)^T = 
+        \overline{U_k^*} A_0 \overline{U_k} = \overline{A_{k+1}}
+      \end{equation*}
+      With Lemma B.1.2 we know: \begin{equation*}
+        span{a_1,...,a_i} = span{q_1,...,q_i} \quad i=1,...,n
+      \end{equation*}
+      and $a_k = \sum_{i=1}^n r_{ik}q_i \\
+      \\
+      A_k = \begin{pmatrix}
+        \ast & \ast &&& \\
+        \ast & \ddots & \ddots &0& \\
+        &\ddots&\ddots&\ddots&\\
+        & 0 &\ddots & \ddots &\ast \\
+        & & &\ast & \ast 
+      \end{pmatrix} = \underbrace{\begin{pmatrix}
+        \ast & & && \\
+        \ast & \ddots && \ast& \\
+        &\ddots& \ddots&&\\
+        &0 & \ddots& \ddots\\
+        & && \ast & \ast
+      \end{pmatrix}}_{Q_k} \underbrace{\begin{pmatrix}
+        \ast & \ast &\ast && 0 \\
+        &\ddots&\ddots&\ddots& \\
+        && \ddots & \ddots & \ast \\
+        & 0 && \ddots &\ast \\
+        & &&  & \ast
+      \end{pmatrix}}_{R_k} \\
+      \\
+      \underbrace{\begin{pmatrix}
+        \ast & \ast &\ast && 0 \\
+        &\ddots&\ddots&\ddots& \\
+        && \ddots & \ddots & \ast \\
+        & 0 && \ddots &\ast \\
+        & &&  & \ast
+      \end{pmatrix}}_{R_k} \underbrace{\begin{pmatrix}
+        \ast & & && \\
+        \ast & \ddots && \ast& \\
+        &\ddots& \ddots&&\\
+        &0 & \ddots& \ddots\\
+        & && \ast & \ast
+      \end{pmatrix}}_{Q_k} = \begin{pmatrix}
+        \ast & & && \\
+        \ast & \ddots && \ast& \\
+        &\ddots& \ddots&&\\
+        &0 & \ddots& \ddots\\
+        & && \ast & \ast
+      \end{pmatrix} = A_{k+1}\\
+      \\
+      \stackrel{A_{k+1} \text{hermitian}}{\implies} A_{k+1}$ is tridiagonal
   \end{Solution}
 
   \begin{Solution}
+    \Claim For a symmeric matrix $A$, in the proof of Theorem  1.4.16, $H$ would be tridiagonal \\
+    \Proof Any matrix $A\in \C ^{n\x n}$ can be transformed into a hessenberg matrix
+    using similarity transformations st $H=Q^TAQ$ (with householder reflections for example). When A is symmetric, $H$ is also 
+    symmetric and therefore tridiagonal.  
   \end{Solution}
 
   \begin{Solution}
+    Use Algorithm B.1.10 to compute the QR-factorization
   \end{Solution}
 
   \begin{Solution}
+    The QR method will not converge for $A=$ \smatrix{0}{1}{1}{0}, since $A$ is orthogonal \\
+    $\implies Q=A, \quad R=\I \\
+    \stackrel{inductive}{\implies} A^{(k+1)} = R^{(k)}Q^{(k)} = \I A^{(k)} = A^{(k)}$
   \end{Solution}
 
   \begin{Solution}[Programming]
@@ -27,6 +90,7 @@
   https://math.stackexchange.com/questions/177957/eigenvalues-of-tridiagonal-symmetric-matrix-with-diagonal-entries-2-and-subdiago?rq=1
   \end{Solution}
 
+\end{onehalfspace}
 \end{SolutionSheet}
 
 

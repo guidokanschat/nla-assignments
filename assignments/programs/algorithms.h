@@ -108,19 +108,17 @@ void gauss_seidel(const MatrixBase& A,
   std::cout << "Starting residual: r = " << r << " \n";
   const unsigned int n = x.size();
   std::vector<double> y(n, 0.);
-  for (unsigned int m = 0; m < n_steps; m++)
-    {
-      for (unsigned int i = 0; i < n; i++)
-	{
-	  y[i] = b[i] / A(i,i);
-	  for (unsigned int j = 0; j < n; j++)
-	    {
-	      if (j == i)
-	  	continue;
-	      y[i] = y[i] - ((A(i,j) / A(i,i)) * x[j]);
-	      x[i] = y[i];
-	    }
-	}
+  for (unsigned int m = 0; m < n_steps; m++){
+      for (unsigned int i = 0; i < n; i++){
+        y[i] = b[i] / A(i,i);
+        for (unsigned int j = 0; j < n; j++)
+          {
+            if (j == i)
+              continue;
+            y[i] = y[i] - ((A(i,j) / A(i,i)) * x[j]);
+            x[i] = y[i];
+          }
+      }
       const double r = norm(A.vmult(x) - b);
       std::cout << "step = " << m << "    r = " << r << " \n";
     }
