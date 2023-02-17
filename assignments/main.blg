@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: sheet1.aux
+A level-1 auxiliary file: sheet1_sol.aux
+A level-1 auxiliary file: sheet2.aux
+A level-1 auxiliary file: sheet2_sol.aux
+A level-1 auxiliary file: sheet3.aux
+A level-1 auxiliary file: sheet3_sol.aux
+A level-1 auxiliary file: sheet4.aux
+A level-1 auxiliary file: sheet4_sol.aux
+A level-1 auxiliary file: sheet5.aux
+A level-1 auxiliary file: sheet5_sol.aux
+A level-1 auxiliary file: sheet6.aux
+A level-1 auxiliary file: sheet6_sol.aux
+A level-1 auxiliary file: sheet7.aux
+A level-1 auxiliary file: sheet7_sol.aux
+A level-1 auxiliary file: sheet8.aux
+The style file: alpha.bst
+A level-1 auxiliary file: sheet8_sol.aux
+A level-1 auxiliary file: sheet9.aux
+A level-1 auxiliary file: sheet9_sol.aux
+A level-1 auxiliary file: sheet10.aux
+A level-1 auxiliary file: sheet10_sol.aux
+Database file #1: bib.bib
+You've used 1 entry,
+            2543 wiz_defined-function locations,
+            586 strings with 4763 characters,
+and the built_in function-call counts, 306 in all, are:
+= -- 26
+> -- 8
+< -- 1
++ -- 2
+- -- 2
+* -- 18
+:= -- 59
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 5
+chr.to.int$ -- 1
+cite$ -- 1
+duplicate$ -- 16
+empty$ -- 26
+format.name$ -- 4
+if$ -- 60
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 8
+num.names$ -- 3
+pop$ -- 7
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 11
+stack$ -- 0
+substring$ -- 7
+swap$ -- 1
+text.length$ -- 1
+text.prefix$ -- 1
+top$ -- 0
+type$ -- 4
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 16

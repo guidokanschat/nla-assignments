@@ -4,8 +4,24 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{SolutionSheet}[\ref{sheet10}]
+\begin{onehalfspace}
 
-  \begin{Solution}
+  \begin{Solution}$A = \I + \alpha B, \quad B^T = -B $($B$ skewsymm, real)\\
+    (a) \Claim $\frac{\scal(Ax,x)}{\scal(x,x)} = 1 \quad \forall x \neq 0$\\
+    \Proof \begin{align*}
+      \scal(Bx,x) &= (Bx)^T x \\
+      &= x^T B^T x \\
+      &= -x^T Bx \\
+      &= - \scal(x,Bx) \\
+      &\stackrel{\scal(\cdot, \cdot) \ symm}{=} -\scal(Bx,x)
+    \end{align*}
+    $\implies \scal(Bx,x) = 0 \\
+    \implies$ \begin{align*}  
+      \frac{\scal(Ax,x)}{\scal(x,x)} &= \frac{\scal(x + \alpha Bx,x)}{\scal(x,x)} \\
+      &= 1 + \alpha \frac{\scal(Bx,x)}{\scal(x,x)} \\
+      &\stackrel{\scal(Bx,x) = 0}{=} 1+\alpha 0 = 1
+  \end{align*}
+  And 
   \end{Solution}
 
   \begin{Solution}
@@ -17,6 +33,7 @@
   \begin{Solution}[Programming]
   \end{Solution}
 
+\end{onehalfspace}
 \end{SolutionSheet}
 
 
