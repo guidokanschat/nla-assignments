@@ -4,28 +4,77 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{SolutionSheet}[\ref{sheet9}]
+\begin{onehalfspace}
+
+  \begin{Solution} Projection:
+    \begin{itemize}
+      \item $P: V \to V$ endomerphism, $P^2 = P$
+      \item orthogonal $\iff \scal(Px,y) = \scal(x,Py) \iff P^2=P=P^*$ 
+      (dependent on scalar product) 
+      \item oblique (not orthogonal) 
+      \item If $\quad W,U \subseteq V \quad W = ker(P), \ U = im(P)\\
+      \implies P|_U = id_U, \\
+      \phantom{\implies} V = U \oplus W$
+      \item Projection Methods: Def 2.3.1, 2.3.3, Thrm 2.3.8, 2.3.9 \\
+      Use cases: \begin{itemize}
+        \item dimension reduction with orthogonal eigenvectors
+        \item min residual Verfahren
+        \item steepest descent
+        \item Bestapproximation
+      \end{itemize}
+  \end{itemize}
+  \end{Solution}
+
+  \begin{Solution} Methods to estimate and compute eigenvalues:
+    \begin{itemize}
+      \item Gershgorin circles
+      \item Rayleigh Quotient (Courant-Fisher) 
+      \item power method
+      \begin{itemize}
+        \item shift
+        \item inverse
+      \end{itemize}
+      \item QR method (Reighleigh shift, Wilkinon shift, double shift)
+    \end{itemize}
+  \end{Solution}
+
+  \begin{Solution} Compute Q of the QR factorization:
+    \begin{itemize}
+      \item Gram-Schmidt (unstable)
+      \item Householder reflection (compute from general matrix)
+      \item Givens rotations (compute from Hessenberg matrix)
+    \end{itemize}
+  \end{Solution}
 
   \begin{Solution}
+    See exercise 3
+  \end{Solution}
+
+  \begin{Solution}
+    solving eigenvalue problems without forming the matrix: \\
+    Implement function that computes the matrix vector product $Av$ for any given vector $v$ (less expensive for sparse matrices) \\
+    Can be used for power method (don't need the matrix for other computations)
   \end{Solution}
 
   \begin{Solution}
   \end{Solution}
 
   \begin{Solution}
+    \Claim For $A$ lower triangluar matrix, the Gauss-seidel iteration provides 
+    the direct solution of the linear system $Ax=b$\\
+    \Proof Let A be lower triangular \\
+    $\implies A=D+L+U$ (decomp into diag, lower and upper triang) \\
+    $\phantom{\implies}$where $U = 0, \ L+D = A\\
+    \\
+    \stackrel{Lemma \ 2.2.5}{\implies}$ Gauss-Seidel:
+    \begin{align*}
+      x^{k+1} &= (\I - (D+L)^{-1} A) x^k + (D+L)^{-1} b \\
+       &= (\I - A^{-1} A) x^k + A^{-1} b \\
+       &= A^{-1}b
+    \end{align*}
   \end{Solution}
 
-  \begin{Solution}
-  \end{Solution}
-
-  \begin{Solution}
-  \end{Solution}
-
-  \begin{Solution}
-  \end{Solution}
-
-  \begin{Solution}
-  \end{Solution}
-
+\end{onehalfspace}
 \end{SolutionSheet}
 
 
